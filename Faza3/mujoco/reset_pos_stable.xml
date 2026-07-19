@@ -1,0 +1,165 @@
+<mujoco model="stable_planar_2dof">
+
+  <!-- Углы в XML задаются в градусах -->
+  <compiler angle="degree" autolimits="true"/>
+
+  <!-- Небольшой timestep и устойчивый решатель -->
+  <option timestep="0.002"
+          integrator="RK4"
+          solver="Newton"
+          iterations="100"
+          tolerance="1e-10"
+          gravity="0 0 -9.81"/>
+
+  <!-- Общие параметры модели -->
+  <default>
+    <!--
+      damping гасит колебания;
+      armature добавляет небольшую инерцию привода;
+      frictionloss уменьшает свободное раскачивание.
+    -->
+    <joint limited="true"
+           damping="3.0"
+           armature="0.04"
+           frictionloss="0.08"/>
+
+    <!-- Коллизии отключены: для этой RL-задачи они не нужны -->
+    <geom density="350"
+          contype="0"
+          conaffinity="0"
+          rgba="0.72 0.72 0.76 1"/>
+  </default>
+
+  <visual>
+    <headlight ambient="0.35 0.35 0.35"
+               diffuse="0.75 0.75 0.75"
+               specular="0.15 0.15 0.15"/>
+  </visual>
+
+  <worldbody>
+
+    <!-- Пол только для визуального ориентира -->
+    <geom name="floor"
+          type="plane"
+          pos="0 0 0"
+          size="3 3 0.1"
+          rgba="0.12 0.13 0.17 1"
+          contype="0"
+          conaffinity="0"/>
+
+    <!-- Камера смотрит на плоскость XZ -->
+    <camera name="main_camera"
+            pos="1.8 -3.0 1.4"
+            xyaxes="1 0 0 0 0.35 0.94"/>
+
+    <!-- Зелёная цель; Python меняет её позицию при reset() -->
+    <site name="target"
+          pos="0.25 0 1.10"
+          size="0.045"
+          rgba="0.1 1 0.1 1"/>
+
+    <!-- Неподвижное основание -->
+    <body name="base" pos="0 0 0">
+
+      <!-- Нижняя платформа -->
+      <geom name="base_plate"
+            type="cylinder"
+            pos="0 0 0.06"
+            size="0.18 0.06"
+            density="1000"
+            rgba="0.25 0.27 0.32 1"/>
+
+      <!-- Вертикальная стойка -->
+      <geom name="pedestal"
+            type="cylinder"
+            pos="0 0 0.43"
+            size="0.10 0.37"
+            density="900"
+            rgba="0.32 0.34 0.40 1"/>
+
+      <!-- Первый подвижный body находится сверху стойки -->
+      <body name="link1_body" pos="0 0 0.80">
+
+        <!-- Вращение вокруг Y => движение только в плоскости XZ -->
+        <joint name="joint1"
+               type="hinge"
+               axis="0 1 0"
+               range="-120 120"/>
+
+        <!-- Визуальный корпус первого шарнира -->
+        <geom name="joint1_housing"
+              type="cylinder"
+              pos="0 0 0"
+              quat="0.7071068 0.7071068 0 0"
+              size="0.065 0.055"
+              density="500"
+              rgba="0.25 0.28 0.35 1"/>
+
+        <!-- Первое звено: 0.40 м -->
+        <geom name="link1"
+              type="capsule"
+              fromto="0 0 0 0 0 0.40"
+              size="0.035"
+              density="350"
+              rgba="0.72 0.72 0.76 1"/>
+
+        <!-- Второй сустав на конце первого звена -->
+        <body name="link2_body" pos="0 0 0.40">
+
+          <joint name="joint2"
+                 type="hinge"
+                 axis="0 1 0"
+                 range="-150 150"/>
+
+          <geom name="joint2_housing"
+                type="cylinder"
+                pos="0 0 0"
+                quat="0.7071068 0.7071068 0 0"
+                size="0.055 0.045"
+                density="450"
+                rgba="0.25 0.28 0.35 1"/>
+
+          <!-- Второе звено: 0.40 м -->
+          <geom name="link2"
+                type="capsule"
+                fromto="0 0 0 0 0 0.40"
+                size="0.032"
+                density="320"
+                rgba="0.82 0.82 0.86 1"/>
+
+          <!-- Красный end-effector -->
+          <site name="ee_site"
+                pos="0 0 0.40"
+                size="0.040"
+                rgba="1 0.1 0.1 1"/>
+
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <!--
+    Position-actuators:
+    ctrl задаёт целевой угол в радианах.
+    kp умеренный: робот движется достаточно быстро, но без резких рывков.
+    Стабилизацию дополнительно обеспечивает damping суставов.
+  -->
+  <actuator>
+    <position name="m1"
+              joint="joint1"
+              kp="45"
+              ctrllimited="true"
+              ctrlrange="-2.0944 2.0944"
+              forcelimited="true"
+              forcerange="-18 18"/>
+
+    <position name="m2"
+              joint="joint2"
+              kp="35"
+              ctrllimited="true"
+              ctrlrange="-2.6180 2.6180"
+              forcelimited="true"
+              forcerange="-12 12"/>
+  </actuator>
+
+</mujoco>

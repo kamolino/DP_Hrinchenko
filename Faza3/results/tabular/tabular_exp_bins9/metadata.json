@@ -1,0 +1,64 @@
+{
+  "algorithm": "tabular_q_learning",
+  "state": [
+    "dx",
+    "dz",
+    "joint_velocity_1",
+    "joint_velocity_2"
+  ],
+  "actions": [
+    [
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "bins_per_dimension": 9,
+  "number_of_discrete_states": 6561,
+  "q_values": 59049,
+  "q_table_memory_mib": 0.22525405883789062,
+  "action_step_deg": 1.0,
+  "alpha": 0.1,
+  "gamma": 0.99,
+  "epsilon_start": 1.0,
+  "epsilon_end": 0.05,
+  "epsilon_decay": 0.9985,
+  "episodes": 3000,
+  "eval_every": 100,
+  "eval_episodes": 100,
+  "seed": 42,
+  "elapsed_seconds": 235.44497179985046,
+  "best_eval_success": 0.56,
+  "best_eval_distance": 0.1529009697213769
+}

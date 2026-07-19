@@ -1,0 +1,5 @@
+method,source_directory,bins,states,q_values,memory_mib,elapsed_seconds,best_episode,best_success,best_distance,best_return,final_success,final_distance,final_return
+Tabular Q (5 bins),/home/xxgrinch/Desktop/DP/Faza3/Faza3_Final/results/tabular/tabular_exp_bins5,5,625,5625,0.021457672119140625,239.09985065460205,2300,0.57,0.1671502312272787,-15.848146083754491,0.45,0.16169403847306968,-11.282060851800567
+Tabular Q (7 bins),/home/xxgrinch/Desktop/DP/Faza3/Faza3_Final/results/tabular/tabular_exp_bins7,7,2401,21609,0.08243179321289062,227.55345392227173,2800,0.61,0.1378688590042293,-6.007904488910153,0.5,0.15873499300330876,-9.761195498574487
+Tabular Q (9 bins),/home/xxgrinch/Desktop/DP/Faza3/Faza3_Final/results/tabular/tabular_exp_bins9,9,6561,59049,0.22525405883789062,235.44497179985046,1400,0.56,0.1529009697213769,-7.8104949904220815,0.41,0.2139018925651908,-15.987361467914303
+DQN,/home/xxgrinch/Desktop/DP/Faza3/Faza3_Final/results/dqn,,,,,,1500,0.97,0.029925337061285973,9.557886118193203,0.97,0.029925337061285973,9.557886118193203
