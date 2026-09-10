@@ -67,5 +67,3 @@ OMP_NUM_THREADS=1 Faza3_2/.venv/bin/python -m unittest discover -s Faza3_2/tests
 ## Čo ešte zostáva
 
 Zatiaľ som riešenie overil iba v simulácii. Robot dosahuje polohu XYZ, ale nerieši požadovanú orientáciu uchopovača. Testy neobsahovali nové vonkajšie prekážky, záťaž nástroja ani šum a oneskorenie snímačov. Používa sa ideálna kompenzácia gravitácie. Výsledok 1 mm preto zatiaľ nemôžem preniesť ako tvrdenie o presnosti reálneho robota. Ďalším krokom by bolo doplniť pripojenie k robotu, kalibráciu a overenie pohybových limitov.
-
-Model FR3 pochádza z MuJoCo Menagerie / Franka Description. [Pôvodná licencia](mujoco/franka_fr3/LICENSE) a [opis úprav modelu](mujoco/franka_fr3/PROJECT_MODIFICATIONS.md) sú priložené.
