@@ -181,68 +181,171 @@ def write_interactive(result, destination, tolerance):
 
 
 def render_replay(result, output, episode_index=None, max_frames=160):
-    """Render real MuJoCo meshes at recorded joint configurations as a GIF."""
+    """Replay measured joint positions with visible goal, TCP and orthogonal views."""
     os.environ.setdefault("MUJOCO_GL", "egl")
     import mujoco
-    from PIL import Image, ImageDraw
+    from PIL import Image, ImageDraw, ImageFont
     from fr3_common import load_model_and_data, resolve_indices
+
     episodes = result["episodes"]
     available = [i for i, e in enumerate(episodes) if e.get("qpos") and e.get("positions")]
     if not available:
         raise ValueError("Robot replay requires recorded qpos and positions")
-    if episode_index is None:
-        # Longest successful path illustrates the full motion; not lowest error.
+    automatic_selection = episode_index is None
+    if automatic_selection:
         successes = [i for i in available if episodes[i]["success"]]
         episode_index = max(successes or available, key=lambda i: int(episodes[i].get("steps", 0)))
     ep = episodes[episode_index]
     qpos = np.asarray(ep["qpos"])
     xyz = np.asarray(ep["positions"])
+    goal = np.asarray(ep["task"]["goal"])
     if len(qpos) != len(xyz):
         raise ValueError("qpos and positions must have matching frames")
+    output = Path(output)
+    output.mkdir(parents=True, exist_ok=True)
     model, data = load_model_and_data()
     ids = resolve_indices(model)
     target_body = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_BODY, "target_body")
     target_geom = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_GEOM, "target")
-    model.geom_size[target_geom, 0] = .012
-    data.mocap_pos[model.body_mocapid[target_body]] = ep["task"]["goal"]
+    model.geom_size[target_geom, 0] = .018
+    model.geom_rgba[target_geom] = [.1, .95, .45, 1.]
+    data.mocap_pos[model.body_mocapid[target_body]] = goal
     camera = mujoco.MjvCamera()
-    camera.lookat[:] = [0, 0, .5]
-    camera.distance = 2.7
-    camera.azimuth = 135
-    camera.elevation = -23
-    model.vis.global_.offwidth = 720
-    model.vis.global_.offheight = 480
-    renderer = mujoco.Renderer(model, height=480, width=720)
-    frames = []
+    bounds = np.vstack((xyz, goal, [0, 0, .35]))
+    camera.lookat[:] = (bounds.min(0) + bounds.max(0)) / 2
+    camera.distance = max(1.65, float(np.ptp(bounds, axis=0).max()) * 2.8)
+    camera.azimuth = float(np.degrees(np.arctan2(goal[1], goal[0]))) + 45
+    camera.elevation = -24
+    width, height, view_width = 1120, 720, 760
+    model.vis.global_.offwidth = view_width
+    model.vis.global_.offheight = 580
+    renderer = mujoco.Renderer(model, height=580, width=view_width)
+    try:
+        regular = ImageFont.truetype("DejaVuSans.ttf", 16)
+        small = ImageFont.truetype("DejaVuSans.ttf", 13)
+        title = ImageFont.truetype("DejaVuSans-Bold.ttf", 23)
+        strong = ImageFont.truetype("DejaVuSans-Bold.ttf", 17)
+    except OSError:
+        regular = small = title = strong = ImageFont.load_default()
+    green, blue, orange = "#43ec91", "#41baff", "#ffbf65"
+    ink, muted = "#f1f5f9", "#becbd7"
+    control_dt = float(result.get("summary", {}).get("control_dt", .05))
     indices = np.unique(np.linspace(0, len(qpos)-1, min(len(qpos), max_frames)).astype(int))
-    for i in indices:
-        data.qpos[ids.qpos_ids] = qpos[i]
-        mujoco.mj_forward(model, data)
-        renderer.update_scene(data, camera=camera)
-        scene = renderer.scene
-        path_indices = np.unique(np.linspace(0, i, min(i+1, 80)).astype(int))
-        for point in xyz[path_indices]:
-            if scene.ngeom >= scene.maxgeom:
-                break
-            mujoco.mjv_initGeom(scene.geoms[scene.ngeom], mujoco.mjtGeom.mjGEOM_SPHERE,
-                              [.003, .003, .003], point, np.eye(3).reshape(9), [.95, .55, .08, .8])
-            scene.ngeom += 1
-        frame = Image.fromarray(renderer.render())
-        draw = ImageDraw.Draw(frame)
-        distance = np.linalg.norm(xyz[i]-ep["task"]["goal"])*1000
-        draw.rectangle((0, 0, 720, 31), fill=(18, 28, 36))
-        draw.text((12, 10), f"FR3 | recorded episode {episode_index} | TCP error {distance:.2f} mm | frame {i}/{len(qpos)-1}", fill=(245, 247, 249))
-        frames.append(frame)
-    renderer.close()
+    frames = []
+
+    def project(point, scene):
+        # Average the two eye cameras used by the monoscopic MuJoCo renderer.
+        cameras = scene.camera
+        pos = (cameras[0].pos + cameras[1].pos) / 2
+        forward = (cameras[0].forward + cameras[1].forward) / 2
+        up = (cameras[0].up + cameras[1].up) / 2
+        forward = forward / np.linalg.norm(forward)
+        up = up / np.linalg.norm(up)
+        right = np.cross(forward, up)
+        right /= np.linalg.norm(right)
+        delta = point - pos
+        depth = float(delta @ forward)
+        if depth <= 0:
+            return None
+        c = cameras[0]
+        scale = 580 * float(c.frustum_near) / (float(c.frustum_top-c.frustum_bottom)*depth)
+        return (view_width/2 + float(delta @ right)*scale,
+                84 + 290 - float(delta @ up)*scale)
+
+    def ring(draw, point, color, radius=9):
+        x, y = point
+        draw.ellipse((x-radius, y-radius, x+radius, y+radius), outline="#122333", width=5)
+        draw.ellipse((x-radius, y-radius, x+radius, y+radius), outline=color, width=3)
+
+    def plan_view(draw, rect, axes, heading, i):
+        left, top, right, bottom = rect
+        draw.rounded_rectangle(rect, radius=12, fill="#192c3e", outline="#344b5f")
+        draw.text((left+15, top+10), heading, font=strong, fill=ink)
+        points = np.vstack((xyz[:, axes], goal[list(axes)]))
+        low, high = points.min(0), points.max(0)
+        span = np.maximum(high-low, .1)
+        scale = min((right-left-60)/span[0], (bottom-top-75)/span[1])
+        center = (low+high)/2
+        def xy(p):
+            p = np.asarray(p)[list(axes)]
+            return ((left+right)/2+(p[0]-center[0])*scale,
+                    (top+bottom+18)/2-(p[1]-center[1])*scale)
+        # Grey line is the complete recorded trajectory, not a planned path.
+        draw.line([xy(p) for p in xyz], fill="#637586", width=2)
+        if i:
+            draw.line([xy(p) for p in xyz[:i+1]], fill=blue, width=4)
+        sx, sy = xy(xyz[0])
+        draw.rectangle((sx-4, sy-4, sx+4, sy+4), fill=orange)
+        ring(draw, xy(goal), green, 9)
+        cx, cy = xy(xyz[i])
+        draw.ellipse((cx-4, cy-4, cx+4, cy+4), fill=blue)
+        draw.text((left+15, bottom-25), f"{'XYZ'[axes[0]]} / {'XYZ'[axes[1]]} [m]", font=small, fill=muted)
+
+    try:
+        for i in indices:
+            data.qpos[ids.qpos_ids] = qpos[i]
+            mujoco.mj_forward(model, data)
+            renderer.update_scene(data, camera=camera)
+            scene = renderer.scene
+            path_indices = np.unique(np.linspace(0, i, min(i+1, 110)).astype(int))
+            for a, b in zip(path_indices[:-1], path_indices[1:]):
+                if scene.ngeom >= scene.maxgeom:
+                    break
+                geom = scene.geoms[scene.ngeom]
+                mujoco.mjv_initGeom(geom, mujoco.mjtGeom.mjGEOM_CAPSULE,
+                                  np.zeros(3), np.zeros(3), np.eye(3).reshape(9), [.15, .7, 1., 1.])
+                mujoco.mjv_connector(geom, mujoco.mjtGeom.mjGEOM_CAPSULE, .0035, xyz[a], xyz[b])
+                scene.ngeom += 1
+            frame = Image.new("RGB", (width, height), "#101e2b")
+            frame.paste(Image.fromarray(renderer.render()), (0, 84))
+            draw = ImageDraw.Draw(frame)
+            distance = float(np.linalg.norm(xyz[i]-goal)*1000)
+            finished = i == len(qpos)-1
+            status = "Cieľ dosiahnutý" if finished and ep["success"] else "Úloha neúspešná" if finished else "Pohyb k cieľu"
+            draw.text((22, 13), "FR3 – pohyb k zadanému cieľu", font=title, fill=ink)
+            draw.text((22, 49), f"Úloha {episode_index+1} / {len(episodes)}  |  Čas simulácie: {i*control_dt:.2f} s  |  {status}", font=regular, fill=green if finished and ep['success'] else muted)
+            # Overlay markers remain visible when the target is hidden by the arm.
+            gp, tp = project(goal, scene), project(xyz[i], scene)
+            for point, label, color, box in [(gp, "CIEĽ – pevný bod", green, (490, 106, 735, 143)),
+                                              (tp, "TCP – koniec ramena", blue, (22, 106, 275, 143))]:
+                if point is not None:
+                    anchor = ((box[0]+box[2])/2, box[3])
+                    draw.line((anchor, point), fill="#15293a", width=5)
+                    draw.line((anchor, point), fill=color, width=2)
+                    ring(draw, point, color)
+                draw.rounded_rectangle(box, radius=7, fill="#102331", outline=color, width=2)
+                draw.text((box[0]+12, box[1]+8), label, font=strong, fill=color)
+            draw.text((782, 101), "Vzdialenosť TCP od cieľa", font=regular, fill=muted)
+            draw.text((782, 128), f"{distance:.2f} mm", font=title, fill=green if distance <= 1 else ink)
+            draw.text((782, 163), "Podmienka: ≤ 1 mm, ≤ 5 mm/s", font=small, fill=muted)
+            draw.text((782, 183), "nepretržite počas 0,3 s", font=small, fill=muted)
+            plan_view(draw, (780, 215, 1100, 412), (0, 1), "Pohľad zhora · X–Y", i)
+            plan_view(draw, (780, 425, 1100, 622), (0, 2), "Pohľad zboku · X–Z", i)
+            draw.text((782, 635), "Zelená: cieľ   Modrá: prejdená dráha", font=small, fill=muted)
+            draw.text((782, 654), "Oranžová: štart   Sivá: celý záznam", font=small, fill=muted)
+            draw.rectangle((0, 675, width, height), fill="#101e2b")
+            draw.text((22, 688), "Zrýchlený záznam zo simulácie. Značky sú zväčšené; ich veľkosť nepredstavuje toleranciu 1 mm.", font=small, fill=muted)
+            frames.append(frame)
+    finally:
+        renderer.close()
     destination = output / "robot_replay.gif"
-    frames[0].save(destination, save_all=True, append_images=frames[1:] + [frames[-1]]*15,
-                   duration=50, loop=1, optimize=False)
+    durations = [70]*len(frames)
+    durations[0] = 1200
+    durations[-1] = 2500
+    frames[0].save(destination, save_all=True, append_images=frames[1:],
+                   duration=durations, loop=0, optimize=False)
+    frames[0].save(output / "robot_replay_start.png")
+    frames[len(frames)//2].save(output / "robot_replay_middle.png")
     frames[-1].save(output / "robot_replay_final.png")
-    manifest = {"episode_index": episode_index, "selection": "longest successful recorded episode" if episode_index is None else "explicit or default selected episode",
+    manifest = {"episode_index": int(episode_index), "episode_number": int(episode_index)+1,
+                "selection": "longest successful recorded episode" if automatic_selection else "explicit selected episode",
                 "success": bool(ep["success"]), "error_mm": float(ep["distance"])*1000,
-                "source_steps": int(ep.get("steps", len(qpos)-1)), "rendered_frames": len(indices),
-                "playback": "50 ms per downsampled frame; compressed motion, not physical timing",
-                "target_marker_radius_m": .012, "note": "Marker enlarged for visibility; does not represent tolerance"}
+                "source_steps": int(ep.get("steps", len(qpos)-1)), "control_dt": control_dt,
+                "rendered_frames": len(indices), "frame_durations_ms": durations,
+                "playback": "Downsampled replay with start/end pauses; not physical timing",
+                "target_marker_radius_m": .018,
+                "overlays": "Projected goal and TCP markers, measured TCP error, XY/XZ recorded paths",
+                "note": "Markers enlarged for visibility; grey path is the full measured trajectory, not the planner output"}
     (output / "robot_replay.json").write_text(json.dumps(manifest, indent=2))
     return destination
 

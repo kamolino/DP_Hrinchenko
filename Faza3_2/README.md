@@ -29,7 +29,13 @@ Ciele sú rozložené do 12 smerových sektorov a do rôznych výšok a vzdialen
 
 ## Ukážky pohybu
 
-[Animácia robota](results/workspace/visualization/robot_replay.gif) ukazuje zrýchlené prehratie jednej zaznamenanej úspešnej úlohy. Zelený bod je pre lepšiu viditeľnosť zväčšený a neukazuje veľkosť tolerancie.
+[Animácia robota](results/workspace/visualization/robot_replay.gif) ukazuje jednu uloženú úlohu od štartu až po dosiahnutie cieľa. Je to úloha č. 216, najdlhšia úspešná v tomto teste. V simulácii trvala 24,65 s a skončila s chybou približne 0,41 mm. Prehrávanie je zrýchlené, so zastavením na začiatku a na konci.
+
+Zelená značka **CIEĽ** označuje pevný bod, ku ktorému sa má robot dostať. Modrá značka **TCP** ukazuje aktuálny koniec ramena a modrá čiara jeho prejdenú dráhu. Značky majú popisy, aby boli viditeľné aj vtedy, keď cieľ zakrýva robot. Ich veľkosť neukazuje toleranciu 1 mm.
+
+Vpravo je aktuálna vzdialenosť od cieľa a dva menšie pohľady: zhora a zboku. Oranžový bod označuje štart, sivá čiara celú zaznamenanú trajektóriu a modrá jej už prejdenú časť. Sivá čiara teda nie je cesta navrhnutá plánovačom. Na konci sa zobrazí „Cieľ dosiahnutý“ podľa výsledku uloženého testu.
+
+![Začiatok ukážky – cieľ a koniec ramena](results/workspace/visualization/robot_replay_start.png)
 
 V [interaktívnej vizualizácii](results/workspace/visualization/workspace_viewer.html) sú všetky testované ciele a 23 vybraných trajektórií vrátane neúspešnej. Dá sa meniť pohľad a prehrávať pohyb. HTML treba po stiahnutí otvoriť v prehliadači, priamo na GitHube sa zobrazuje len jeho kód.
 
@@ -67,3 +73,11 @@ OMP_NUM_THREADS=1 Faza3_2/.venv/bin/python -m unittest discover -s Faza3_2/tests
 ## Čo ešte zostáva
 
 Zatiaľ som riešenie overil iba v simulácii. Robot dosahuje polohu XYZ, ale nerieši požadovanú orientáciu uchopovača. Testy neobsahovali nové vonkajšie prekážky, záťaž nástroja ani šum a oneskorenie snímačov. Používa sa ideálna kompenzácia gravitácie. Výsledok 1 mm preto zatiaľ nemôžem preniesť ako tvrdenie o presnosti reálneho robota. Ďalším krokom by bolo doplniť pripojenie k robotu, kalibráciu a overenie pohybových limitov.
+
+## Prečo som zvolil toto riešenie
+
+Samotný bežný DQN by bol jednoduchší na naprogramovanie. Náročnejšie by však bolo naučiť ho, aby bez plánovača sám našiel celý postup pohybu k vzdialenému cieľu a nakoniec zastavil s presnosťou 1 mm. Musel by zvládnuť dlhé postupnosti akcií, rôzne štartovacie polohy aj obmedzenia robota. Očakávam preto náročnejšie učenie a ladenie, ale zatiaľ nemám meranie, z ktorého by sa dalo povedať, koľkonásobne náročnejšie by to bolo.
+
+V súčasnom riešení plánovač rozdelí túto úlohu na menšie časti a DQN sa učí riadiť pohyb medzi nimi. Double DQN je pritom iba menšia úprava učenia oproti DQN, ktorá pomáha obmedziť nadhodnocovanie akcií. Najväčší rozdiel oproti samostatnému DQN je pomoc plánovača a učenie na ukážkach, nie samotné slovo „Double“.
+
+Pre túto fázu mi tento postup dáva zmysel: mám funkčné riadenie, viem ho predviesť a jeho výsledky sú overené na uložených úlohách. Zároveň je jasné, ktorú časť rieši plánovač a ktorú naučená sieť. Neznamená to, že obyčajný DQN nemôže dosiahnuť podobný výsledok. To by bolo potrebné overiť samostatným tréningom a porovnaním za rovnakých podmienok; výsledok 99,54 % mu zatiaľ nemôžem sľúbiť.
