@@ -1,0 +1,2368 @@
+{
+  "schema_version": 1,
+  "seed": 731003,
+  "tasks": 72,
+  "sampling_attempts": 24000,
+  "valid_candidate_endpoints": 21645,
+  "config": {
+    "tolerance": 0.001,
+    "hold_seconds": 0.3,
+    "max_tcp_speed": 0.005,
+    "frame_skip": 25,
+    "max_steps": 300,
+    "joint_margin": 0.08,
+    "max_action": 0.04,
+    "min_action": 0.0004,
+    "gravity_compensation": true
+  },
+  "tcp_floor_clearance_m": 0.03,
+  "joint_low_rad": [
+    -2.6637,
+    -1.7037,
+    -2.8207,
+    -2.9621,
+    -2.7265,
+    0.6244999999999999,
+    -2.9358999999999997
+  ],
+  "joint_high_rad": [
+    2.6637,
+    1.7037,
+    2.8207,
+    -0.2318,
+    2.7265,
+    4.4369,
+    2.9358999999999997
+  ],
+  "radius_edges_m": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "height_edges_m": [
+    0.03,
+    0.25,
+    0.45,
+    0.65,
+    0.85,
+    1.05,
+    1.3
+  ],
+  "azimuth_edges_deg": [
+    -180.0,
+    -150.0,
+    -120.0,
+    -90.0,
+    -60.0,
+    -30.0,
+    0.0,
+    30.0,
+    60.0,
+    90.0,
+    120.0,
+    150.0,
+    180.0
+  ],
+  "candidate_bounds": {
+    "min_m": [
+      -0.8498412664078613,
+      -0.8471560008188886,
+      0.03153659815199862
+    ],
+    "max_m": [
+      0.8445299744028193,
+      0.8490141344308672,
+      1.187820240571551
+    ],
+    "radius_min_m": 0.005733800057113086,
+    "radius_max_m": 0.8572215951108665
+  },
+  "goal_bounds": {
+    "min_m": [
+      -0.8351535119162337,
+      -0.7882890750141684,
+      0.03156854383980885
+    ],
+    "max_m": [
+      0.8201471046782313,
+      0.804193967494542,
+      1.1779034339312606
+    ],
+    "radius_min_m": 0.031213669652808917,
+    "radius_max_m": 0.850262427108511
+  },
+  "groups": {
+    "global_home": 24,
+    "boundary_home": 24,
+    "random_start": 24
+  },
+  "goal_azimuth_counts": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "goal_radius_counts": [
+    15,
+    15,
+    14,
+    14,
+    14
+  ],
+  "goal_height_counts": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "occupied_candidate_cells": 312,
+  "occupied_goal_cells": 71,
+  "cell_coverage": [
+    {
+      "azimuth": 0,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 14,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 10,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 11,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 9,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 16,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 44,
+      "tasks": 1
+    },
+    {
+      "azimuth": 0,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 100,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 83,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 64,
+      "tasks": 1
+    },
+    {
+      "azimuth": 0,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 52,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 124,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 62,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 84,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 129,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 152,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 163,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 155,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 5,
+      "tasks": 1
+    },
+    {
+      "azimuth": 0,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 57,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 83,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 144,
+      "tasks": 1
+    },
+    {
+      "azimuth": 0,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 78,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 13,
+      "tasks": 0
+    },
+    {
+      "azimuth": 0,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 11,
+      "tasks": 1
+    },
+    {
+      "azimuth": 0,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 21,
+      "tasks": 1
+    },
+    {
+      "azimuth": 0,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 10,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 6,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 15,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 15,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 28,
+      "tasks": 1
+    },
+    {
+      "azimuth": 1,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 100,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 110,
+      "tasks": 1
+    },
+    {
+      "azimuth": 1,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 58,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 72,
+      "tasks": 1
+    },
+    {
+      "azimuth": 1,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 119,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 76,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 68,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 137,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 126,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 158,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 155,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 52,
+      "tasks": 1
+    },
+    {
+      "azimuth": 1,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 107,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 134,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 111,
+      "tasks": 1
+    },
+    {
+      "azimuth": 1,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 22,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 16,
+      "tasks": 1
+    },
+    {
+      "azimuth": 1,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 45,
+      "tasks": 0
+    },
+    {
+      "azimuth": 1,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 23,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 11,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 10,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 26,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 35,
+      "tasks": 1
+    },
+    {
+      "azimuth": 2,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 90,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 80,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 66,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 63,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 115,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 68,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 88,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 132,
+      "tasks": 1
+    },
+    {
+      "azimuth": 2,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 143,
+      "tasks": 1
+    },
+    {
+      "azimuth": 2,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 178,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 168,
+      "tasks": 1
+    },
+    {
+      "azimuth": 2,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 12,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 63,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 125,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 169,
+      "tasks": 1
+    },
+    {
+      "azimuth": 2,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 143,
+      "tasks": 1
+    },
+    {
+      "azimuth": 2,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 23,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 19,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 33,
+      "tasks": 0
+    },
+    {
+      "azimuth": 2,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 34,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 13,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 10,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 8,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 27,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 27,
+      "tasks": 1
+    },
+    {
+      "azimuth": 3,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 17,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 95,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 98,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 64,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 56,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 113,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 71,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 77,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 139,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 108,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 158,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 159,
+      "tasks": 1
+    },
+    {
+      "azimuth": 3,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 5,
+      "tasks": 1
+    },
+    {
+      "azimuth": 3,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 83,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 134,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 173,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 136,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 17,
+      "tasks": 0
+    },
+    {
+      "azimuth": 3,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 21,
+      "tasks": 1
+    },
+    {
+      "azimuth": 3,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 36,
+      "tasks": 1
+    },
+    {
+      "azimuth": 3,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 23,
+      "tasks": 1
+    },
+    {
+      "azimuth": 4,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 16,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 9,
+      "tasks": 1
+    },
+    {
+      "azimuth": 4,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 13,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 15,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 25,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 29,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 88,
+      "tasks": 1
+    },
+    {
+      "azimuth": 4,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 84,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 61,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 56,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 114,
+      "tasks": 1
+    },
+    {
+      "azimuth": 4,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 53,
+      "tasks": 1
+    },
+    {
+      "azimuth": 4,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 60,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 155,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 141,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 156,
+      "tasks": 1
+    },
+    {
+      "azimuth": 4,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 121,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 5,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 76,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 100,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 152,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 126,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 14,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 22,
+      "tasks": 1
+    },
+    {
+      "azimuth": 4,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 41,
+      "tasks": 0
+    },
+    {
+      "azimuth": 4,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 28,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 13,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 12,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 12,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 11,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 23,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 27,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 105,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 95,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 81,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 61,
+      "tasks": 1
+    },
+    {
+      "azimuth": 5,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 105,
+      "tasks": 1
+    },
+    {
+      "azimuth": 5,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 56,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 70,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 124,
+      "tasks": 1
+    },
+    {
+      "azimuth": 5,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 163,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 172,
+      "tasks": 1
+    },
+    {
+      "azimuth": 5,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 133,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 72,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 97,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 146,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 111,
+      "tasks": 1
+    },
+    {
+      "azimuth": 5,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 14,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 5,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 28,
+      "tasks": 1
+    },
+    {
+      "azimuth": 5,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 14,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 20,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 13,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 29,
+      "tasks": 1
+    },
+    {
+      "azimuth": 6,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 32,
+      "tasks": 1
+    },
+    {
+      "azimuth": 6,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 98,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 121,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 72,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 69,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 96,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 69,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 69,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 132,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 146,
+      "tasks": 1
+    },
+    {
+      "azimuth": 6,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 183,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 159,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 75,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 85,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 135,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 108,
+      "tasks": 0
+    },
+    {
+      "azimuth": 6,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 13,
+      "tasks": 1
+    },
+    {
+      "azimuth": 6,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 10,
+      "tasks": 1
+    },
+    {
+      "azimuth": 6,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 30,
+      "tasks": 1
+    },
+    {
+      "azimuth": 6,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 16,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 14,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 11,
+      "tasks": 1
+    },
+    {
+      "azimuth": 7,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 19,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 25,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 30,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 24,
+      "tasks": 1
+    },
+    {
+      "azimuth": 7,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 105,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 102,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 64,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 58,
+      "tasks": 1
+    },
+    {
+      "azimuth": 7,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 132,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 55,
+      "tasks": 1
+    },
+    {
+      "azimuth": 7,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 71,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 142,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 150,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 164,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 147,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 3,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 59,
+      "tasks": 1
+    },
+    {
+      "azimuth": 7,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 116,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 178,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 111,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 20,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 19,
+      "tasks": 1
+    },
+    {
+      "azimuth": 7,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 40,
+      "tasks": 0
+    },
+    {
+      "azimuth": 7,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 15,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 16,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 31,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 27,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 74,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 113,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 84,
+      "tasks": 1
+    },
+    {
+      "azimuth": 8,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 50,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 108,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 56,
+      "tasks": 1
+    },
+    {
+      "azimuth": 8,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 65,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 99,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 103,
+      "tasks": 1
+    },
+    {
+      "azimuth": 8,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 150,
+      "tasks": 1
+    },
+    {
+      "azimuth": 8,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 188,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 11,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 85,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 108,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 160,
+      "tasks": 1
+    },
+    {
+      "azimuth": 8,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 133,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 18,
+      "tasks": 1
+    },
+    {
+      "azimuth": 8,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 10,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 43,
+      "tasks": 0
+    },
+    {
+      "azimuth": 8,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 21,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 13,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 11,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 10,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 9,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 27,
+      "tasks": 1
+    },
+    {
+      "azimuth": 9,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 31,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 72,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 103,
+      "tasks": 1
+    },
+    {
+      "azimuth": 9,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 76,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 58,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 118,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 64,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 67,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 105,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 118,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 164,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 160,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 8,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 60,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 113,
+      "tasks": 1
+    },
+    {
+      "azimuth": 9,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 151,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 116,
+      "tasks": 1
+    },
+    {
+      "azimuth": 9,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 22,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 14,
+      "tasks": 1
+    },
+    {
+      "azimuth": 9,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 32,
+      "tasks": 0
+    },
+    {
+      "azimuth": 9,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 25,
+      "tasks": 1
+    },
+    {
+      "azimuth": 10,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 13,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 9,
+      "tasks": 1
+    },
+    {
+      "azimuth": 10,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 21,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 31,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 41,
+      "tasks": 2
+    },
+    {
+      "azimuth": 10,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 97,
+      "tasks": 1
+    },
+    {
+      "azimuth": 10,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 83,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 69,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 72,
+      "tasks": 1
+    },
+    {
+      "azimuth": 10,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 119,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 54,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 67,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 134,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 135,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 151,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 155,
+      "tasks": 1
+    },
+    {
+      "azimuth": 10,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 9,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 81,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 106,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 153,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 125,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 17,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 21,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 40,
+      "tasks": 0
+    },
+    {
+      "azimuth": 10,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 21,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 0,
+      "height": 0,
+      "valid_pool_endpoints": 11,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 0,
+      "height": 1,
+      "valid_pool_endpoints": 14,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 0,
+      "height": 2,
+      "valid_pool_endpoints": 8,
+      "tasks": 1
+    },
+    {
+      "azimuth": 11,
+      "radius": 0,
+      "height": 3,
+      "valid_pool_endpoints": 19,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 0,
+      "height": 4,
+      "valid_pool_endpoints": 21,
+      "tasks": 1
+    },
+    {
+      "azimuth": 11,
+      "radius": 0,
+      "height": 5,
+      "valid_pool_endpoints": 37,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 1,
+      "height": 0,
+      "valid_pool_endpoints": 90,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 1,
+      "height": 1,
+      "valid_pool_endpoints": 110,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 1,
+      "height": 2,
+      "valid_pool_endpoints": 64,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 1,
+      "height": 3,
+      "valid_pool_endpoints": 63,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 1,
+      "height": 4,
+      "valid_pool_endpoints": 129,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 1,
+      "height": 5,
+      "valid_pool_endpoints": 77,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 2,
+      "height": 0,
+      "valid_pool_endpoints": 79,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 2,
+      "height": 1,
+      "valid_pool_endpoints": 153,
+      "tasks": 1
+    },
+    {
+      "azimuth": 11,
+      "radius": 2,
+      "height": 2,
+      "valid_pool_endpoints": 124,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 2,
+      "height": 3,
+      "valid_pool_endpoints": 165,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 2,
+      "height": 4,
+      "valid_pool_endpoints": 146,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 2,
+      "height": 5,
+      "valid_pool_endpoints": 7,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 3,
+      "height": 0,
+      "valid_pool_endpoints": 66,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 3,
+      "height": 1,
+      "valid_pool_endpoints": 98,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 3,
+      "height": 2,
+      "valid_pool_endpoints": 136,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 3,
+      "height": 3,
+      "valid_pool_endpoints": 102,
+      "tasks": 1
+    },
+    {
+      "azimuth": 11,
+      "radius": 3,
+      "height": 4,
+      "valid_pool_endpoints": 7,
+      "tasks": 1
+    },
+    {
+      "azimuth": 11,
+      "radius": 4,
+      "height": 0,
+      "valid_pool_endpoints": 9,
+      "tasks": 1
+    },
+    {
+      "azimuth": 11,
+      "radius": 4,
+      "height": 1,
+      "valid_pool_endpoints": 25,
+      "tasks": 0
+    },
+    {
+      "azimuth": 11,
+      "radius": 4,
+      "height": 2,
+      "valid_pool_endpoints": 18,
+      "tasks": 0
+    }
+  ],
+  "witness_joint_min_rad": [
+    -2.613108313775748,
+    -1.6933383317714696,
+    -2.8143247203588126,
+    -2.944790860089642,
+    -2.7259535526666996,
+    0.6328339832909997,
+    -2.919438654769681
+  ],
+  "witness_joint_max_rad": [
+    2.6090684851068837,
+    1.6998408959951519,
+    2.814729299706174,
+    -0.2506313874194639,
+    2.7215162018596613,
+    4.435686142374766,
+    2.9076966563634
+  ],
+  "start_joint_min_rad": [
+    -2.660605017973388,
+    -1.6740579845812482,
+    -2.5703397002223145,
+    -2.9379371936286773,
+    -2.6459044107168332,
+    0.9817706517405684,
+    -2.892188155195369
+  ],
+  "start_joint_max_rad": [
+    2.543577365539441,
+    1.6821774568900238,
+    2.733799104158749,
+    -0.23751266947978378,
+    2.187667932371617,
+    4.346733585681545,
+    2.83722368509379
+  ],
+  "limitations": [
+    "Finite sampled benchmark, not a proof of coverage of every reachable Cartesian point.",
+    "Only endpoint feasibility is certified; no collision-free path is supplied or assumed.",
+    "Position only: the task does not prescribe tool orientation, payload, or added obstacles.",
+    "3 cm TCP floor clearance and a joint margin restrict the tested operational workspace.",
+    "Candidate extrema approximate boundaries; unsampled cells are not certified unreachable.",
+    "Task selection uses geometry only, never controller success or failure.",
+    "All generated tasks must remain in evaluation, including planning failures and collisions."
+  ],
+  "endpoint_validation": {
+    "validated_tasks": 72,
+    "invalid_tasks": 0
+  }
+}

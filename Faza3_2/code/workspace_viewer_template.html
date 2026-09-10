@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FR3 — výsledky dosahovania cieľa</title>
+<style>
+:root {color-scheme:light; --foreground:#182431; --background:#f6f8fa; --muted-foreground:#5c6b78; --border:#d5dde3; --viz-series-1:#087e70; --viz-series-2:#d34b39; --viz-series-3:#336fc4;}
+*{box-sizing:border-box} body{margin:0;padding:28px 18px;background:var(--background);color:var(--foreground);font:16px/1.5 system-ui,sans-serif} #fr3-workspace-view{max-width:1100px;margin:auto} select,button{font:inherit;color:inherit;border:1px solid var(--border);background:white;border-radius:6px;padding:7px 10px} select{display:block;width:100%;margin-top:4px} button{cursor:pointer} button:hover{background:#e8eef4} input[type=range]{width:100%} .text-small{font-size:14px}.text-muted{color:var(--muted-foreground)}.tabular-nums{font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div id="fr3-workspace-view">
+  <style>
+    #fr3-workspace-view .workspace-header { display:flex; flex-wrap:wrap; gap:8px 18px; align-items:baseline; margin-bottom:12px; }
+    #fr3-workspace-view .workspace-header h3 { margin:0; }
+    #fr3-workspace-view .workspace-stage { position:relative; width:100%; margin:12px 0; }
+    #fr3-workspace-view canvas { display:block; width:100%; height:430px; touch-action:pan-y; }
+    #fr3-workspace-view .workspace-legend { display:flex; flex-wrap:wrap; gap:6px 16px; }
+    #fr3-workspace-view .workspace-legend span { display:inline-flex; align-items:center; gap:6px; }
+    #fr3-workspace-view .workspace-swatch { display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--viz-series-1); }
+    #fr3-workspace-view .workspace-swatch.failure { background:var(--viz-series-2); border-radius:0; transform:rotate(45deg); }
+    #fr3-workspace-view .workspace-swatch.path { background:var(--viz-series-3); width:20px; height:3px; border-radius:0; }
+    #fr3-workspace-view .workspace-swatch.target { background:transparent; width:10px; height:10px; border:2px solid var(--foreground); }
+    #fr3-workspace-view .workspace-detail { min-height:1.5em; margin:8px 0; }
+    #fr3-workspace-view .workspace-controls { display:grid; grid-template-columns: minmax(0,1fr) auto; gap:10px; align-items:end; }
+    #fr3-workspace-view .workspace-playback { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:12px; }
+    #fr3-workspace-view .workspace-playback label { flex:1 1 220px; min-width:0; }
+    #fr3-workspace-view .workspace-footer { margin-top:8px; }
+    @media(max-width:480px) { #fr3-workspace-view canvas { height:365px; } #fr3-workspace-view .workspace-controls { grid-template-columns:minmax(0,1fr); } }
+  </style>
+  <div class="workspace-header"><h3>FR3 · Plánovač + DQN</h3><span class="text-small tabular-nums" data-summary></span></div>
+  <div class="workspace-controls">
+    <label class="form-label">Zaznamenaná trajektória <select class="form-select" data-episode aria-label="Vybrať zaznamenanú trajektóriu"></select></label>
+    <label class="form-label">Projekcia <select class="form-select" data-projection aria-label="Projekcia pracovnej oblasti"><option value="3d">Priestorový pohľad</option><option value="xy">Zhora · XY</option><option value="xz">Zboku · XZ</option><option value="yz">Zboku · YZ</option></select></label>
+  </div>
+  <div class="workspace-stage"><canvas role="img" aria-label="Pracovná oblasť robota: testované ciele, zaznamenaná dráha TCP a polohy ramena. Kliknutie na cieľ zobrazí výsledok."></canvas></div>
+  <div class="workspace-legend text-small"><span><i class="workspace-swatch" aria-hidden="true"></i>Úspech</span><span><i class="workspace-swatch failure" aria-hidden="true"></i>Neúspech</span><span><i class="workspace-swatch path" aria-hidden="true"></i>Dráha TCP</span><span><i class="workspace-swatch target" aria-hidden="true"></i>Vybraný cieľ</span></div>
+  <div class="workspace-detail tabular-nums text-small" data-detail aria-live="polite"></div>
+  <div class="workspace-playback"><button type="button" class="btn btn-primary" data-play>Prehrať</button><label class="form-label"><span data-time class="tabular-nums"></span><input class="form-range" data-frame type="range" min="0" max="1" value="0" step="1" aria-label="Poloha na zaznamenanej trajektórii"></label></div>
+  <div class="workspace-footer text-small text-muted" data-footer></div>
+  <script>
+  (() => {
+    const root = document.getElementById('fr3-workspace-view');
+    const data = __WORKSPACE_DATA__;
+    const canvas = root.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+    const episodeSelect = root.querySelector('[data-episode]');
+    const projection = root.querySelector('[data-projection]');
+    const playButton = root.querySelector('[data-play]');
+    const slider = root.querySelector('[data-frame]');
+    const detail = root.querySelector('[data-detail]');
+    const timeLabel = root.querySelector('[data-time]');
+    const footer = root.querySelector('[data-footer]');
+    const recorded = data.episodes.filter(e => e.p && e.p.length);
+    let selected = recorded[0] || data.episodes[0];
+    let frame = 0, playing = false, previous = 0, budget = 0, screenPoints = [];
+    const fmt = (n, digits=1) => Number(n).toLocaleString('sk-SK', {maximumFractionDigits:digits, minimumFractionDigits:digits});
+    root.querySelector('[data-summary]').textContent = `${data.successes}/${data.episodes.length} úspešných · ${fmt(100*data.successes/data.episodes.length)}% · tolerancia ${fmt(data.tolerance,1)} mm`;
+    for (const e of recorded) {
+      const option = document.createElement('option');
+      option.value = e.id;
+      option.textContent = `№ ${e.id+1} · ${e.k} · ${e.s ? 'úspech' : 'neúspech'} · ${fmt(e.e,2)} mm`;
+      episodeSelect.append(option);
+    }
+    footer.textContent = `Všetkých ${data.episodes.length} testovaných cieľov · ${recorded.length} trajektórií na prehrávanie · body v grafe možno vybrať`;
+    const colorProbe = document.createElement('span');
+    colorProbe.hidden = true; colorProbe.setAttribute('aria-hidden','true'); root.append(colorProbe);
+    const resolvedColor = token => { colorProbe.style.color=`var(${token})`; return getComputedStyle(colorProbe).color; };
+    const colors = () => ({fg:resolvedColor('--foreground'), muted:resolvedColor('--muted-foreground'),
+      border:resolvedColor('--border'), good:resolvedColor('--viz-series-1'), bad:resolvedColor('--viz-series-2'),
+      path:resolvedColor('--viz-series-3'), background:resolvedColor('--background')});
+    const projectRaw = p => {
+      if (projection.value === 'xy') return [p[0], -p[1]];
+      if (projection.value === 'xz') return [p[0], -p[2]];
+      if (projection.value === 'yz') return [p[1], -p[2]];
+      return [.78*p[0]-.63*p[1], .28*p[0]+.35*p[1]-.89*p[2]];
+    };
+    const wholePoints = data.episodes.map(e=>e.g).concat([[0,0,0]]);
+    for (const e of recorded) { for (const p of e.p) wholePoints.push(p); if (e.a) for (const links of e.a) wholePoints.push(...links); }
+    function draw() {
+      const box = canvas.getBoundingClientRect();
+      const w = box.width, h = box.height, ratio = window.devicePixelRatio || 1;
+      if (!w || !h) return;
+      if (canvas.width !== Math.round(w*ratio) || canvas.height !== Math.round(h*ratio)) { canvas.width = Math.round(w*ratio); canvas.height = Math.round(h*ratio); }
+      ctx.setTransform(ratio,0,0,ratio,0,0); ctx.clearRect(0,0,w,h);
+      const col = colors();
+      const points = wholePoints.map(projectRaw);
+      const xs = points.map(p=>p[0]), ys = points.map(p=>p[1]);
+      const minX=Math.min(...xs), maxX=Math.max(...xs), minY=Math.min(...ys), maxY=Math.max(...ys);
+      const pad = w<450 ? 30 : 42;
+      const scale = Math.min((w-2*pad)/Math.max(maxX-minX,.1),(h-2*pad)/Math.max(maxY-minY,.1));
+      const centerX=(minX+maxX)/2, centerY=(minY+maxY)/2;
+      const project = p => {const s=projectRaw(p); return [w/2+(s[0]-centerX)*scale, h/2+(s[1]-centerY)*scale];};
+      const line = (a,b,color,width=1,alpha=1) => {ctx.strokeStyle=color;ctx.globalAlpha=alpha;ctx.lineWidth=width;ctx.beginPath();ctx.moveTo(...project(a));ctx.lineTo(...project(b));ctx.stroke();ctx.globalAlpha=1;};
+      ctx.font='12px system-ui';ctx.textAlign='left';ctx.textBaseline='middle';
+      const extents=[0,1,2].map(i=>[Math.min(0,...wholePoints.map(p=>p[i])),Math.max(0,...wholePoints.map(p=>p[i]))]);
+      const axes=projection.value==='xy'?[0,1]:projection.value==='xz'?[0,2]:projection.value==='yz'?[1,2]:[0,1,2];
+      for(const axis of axes) {
+        const end=[0,0,0];end[axis]=extents[axis][1];const start=[0,0,0];start[axis]=extents[axis][0];
+        line(start,end,col.border,1);
+        const at=project(end);ctx.fillStyle=col.fg;ctx.textAlign=at[0]>w*.7?'right':'left';
+        ctx.fillText(`${'XYZ'[axis]} (m)`,Math.max(8,Math.min(w-8,at[0]+4)),Math.max(12,Math.min(h-12,at[1]-12)));
+      }
+      screenPoints=[];
+      for (const e of data.episodes) {
+        const p=project(e.g);screenPoints.push({e,x:p[0],y:p[1]});
+        ctx.globalAlpha=e.s?.38:.92;ctx.fillStyle=e.s?col.good:col.bad;ctx.strokeStyle=col.bad;ctx.lineWidth=1.7;
+        if(e.s) {ctx.beginPath();ctx.arc(...p,w<450?2.1:2.6,0,Math.PI*2);ctx.fill();}
+        else {ctx.beginPath();ctx.moveTo(p[0]-3.5,p[1]-3.5);ctx.lineTo(p[0]+3.5,p[1]+3.5);ctx.moveTo(p[0]+3.5,p[1]-3.5);ctx.lineTo(p[0]-3.5,p[1]+3.5);ctx.stroke();}
+        ctx.globalAlpha=1;
+      }
+      if(selected.p) {
+        for(let i=1;i<selected.p.length;i++)line(selected.p[i-1],selected.p[i],col.path,1,.2);
+        for(let i=1;i<=frame;i++)line(selected.p[i-1],selected.p[i],col.path,2.4,.9);
+        if(selected.a) {
+          const arm=selected.a[frame];
+          for(let i=1;i<arm.length;i++)line(arm[i-1],arm[i],col.fg,w<450?4:5,.7);
+          for(const joint of arm) {const p=project(joint);ctx.fillStyle=col.background;ctx.strokeStyle=col.fg;ctx.lineWidth=1.6;ctx.beginPath();ctx.arc(...p,3.5,0,Math.PI*2);ctx.fill();ctx.stroke();}
+        }
+        const tip=project(selected.p[frame]);ctx.fillStyle=col.path;ctx.beginPath();ctx.arc(...tip,5,0,Math.PI*2);ctx.fill();
+        const error=Math.hypot(...selected.p[frame].map((p,i)=>p-selected.g[i]))*1000;
+        timeLabel.textContent=`Krok ${selected.t[frame]} z ${selected.n} · chyba ${fmt(error,2)} mm`;
+      } else timeLabel.textContent='Pre tento bod je zobrazený výsledok testu';
+      const goal=project(selected.g);ctx.strokeStyle=col.fg;ctx.lineWidth=1.8;ctx.beginPath();ctx.arc(...goal,7,0,Math.PI*2);ctx.stroke();
+      line([0,0,0],[0,0,.02],col.fg,7);
+      const rulerMeters = .2;
+      const rulerWidth = rulerMeters*scale;
+      if(rulerWidth<w*.35){ctx.strokeStyle=col.fg;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(15,h-23);ctx.lineTo(15+rulerWidth,h-23);ctx.stroke();ctx.fillStyle=col.fg;ctx.textAlign='left';ctx.fillText('20 cm',15,h-10);}
+    }
+    function updateSelection(e) {
+      selected=e;frame=0;playing=false;playButton.textContent='Prehrať';
+      slider.max=e.p?e.p.length-1:0;slider.value=0;slider.disabled=!e.p;playButton.disabled=!e.p;
+      if(e.p)episodeSelect.value=e.id;
+      detail.textContent=`№ ${e.id+1} · ${e.s?'Dosiahnutý so zastavením a držaním':'Neúspech'}${e.c?' · kolízia':''} · konečná chyba ${fmt(e.e,2)} mm · XYZ ${e.g.map(p=>fmt(p,3)).join(' / ')} m`;
+      draw();
+    }
+    episodeSelect.addEventListener('change',()=>updateSelection(data.episodes.find(e=>e.id===Number(episodeSelect.value))));
+    projection.addEventListener('change',draw);
+    slider.addEventListener('input',()=>{frame=Number(slider.value);playing=false;playButton.textContent='Prehrať';draw();});
+    playButton.addEventListener('click',()=>{
+      if(!selected.p)return;
+      playing=!playing;if(playing&&frame>=selected.p.length-1)frame=0;
+      previous=0;budget=0;playButton.textContent=playing?'Pauza':'Prehrať';
+      if(playing)requestAnimationFrame(animate);
+    });
+    function animate(timestamp){
+      if(!playing)return;
+      if(previous)budget+=Math.min(timestamp-previous,100);previous=timestamp;
+      if(budget>=90){budget=0;frame=Math.min(frame+1,selected.p.length-1);slider.value=frame;draw();}
+      if(frame>=selected.p.length-1){playing=false;playButton.textContent='Prehrať';return;}
+      requestAnimationFrame(animate);
+    }
+    canvas.addEventListener('click', event=>{
+      const box=canvas.getBoundingClientRect();const x=event.clientX-box.left,y=event.clientY-box.top;
+      let nearest=null, distance=23;
+      for(const p of screenPoints){const d=Math.hypot(p.x-x,p.y-y);if(d<distance){distance=d;nearest=p.e;}}
+      if(nearest)updateSelection(nearest);
+    });
+    const resize = new ResizeObserver(draw);resize.observe(canvas);
+    new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['class','style','data-theme']});
+    if(window.matchMedia)window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+    updateSelection(selected);
+  })();
+  </script>
+</div>
+
+</body>
+</html>
