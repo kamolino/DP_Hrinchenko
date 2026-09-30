@@ -1,0 +1,16 @@
+{
+  "episodes": 200,
+  "successes": 190,
+  "success_rate": 0.95,
+  "mean_error_m": 0.014120699946743974,
+  "median_error_m": 0.008815112920690711,
+  "std_error_m": 0.025904772567235994,
+  "failure_reasons": {
+    "high_contact": 9,
+    "timeout": 1
+  },
+  "mean_success_steps": 54.8,
+  "mean_time_to_success": 2.715926315789401,
+  "model_sha256": "69c657cd6903f3609ae5b83efa8a602f21c1f576942a62bf1862584a194020e6",
+  "protocol": "Frozen PPO, independent fixed C tasks, deterministic actions"
+}

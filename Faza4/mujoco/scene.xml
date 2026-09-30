@@ -1,0 +1,25 @@
+<mujoco model="FR3 pushing">
+  <include file="franka_fr3/fr3.xml"/>
+  <compiler angle="radian" meshdir="franka_fr3/assets"/>
+  <option timestep="0.002" integrator="implicitfast"/>
+  <statistic center="0.35 0 0.3" extent="0.9"/>
+  <visual>
+    <global offwidth="1200" offheight="800" azimuth="135" elevation="-30"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.7 0.7 0.7"/>
+  </visual>
+  <worldbody>
+    <light pos="0.5 -0.5 1.6" dir="0 0 -1"/>
+    <geom name="floor" type="plane" size="2 2 0.02" rgba="0.14 0.18 0.23 1"/>
+    <geom name="table" type="box" pos="0.50 0 0.15" size="0.29 0.28 0.03"
+          friction="0.25 0.005 0.0001" rgba="0.65 0.69 0.73 1"/>
+    <body name="object" pos="0.44 0 0.205">
+      <freejoint name="object_joint"/>
+      <geom name="cube" type="box" size="0.025 0.025 0.025" mass="0.08"
+            friction="0.25 0.005 0.0001" rgba="1 0.4 0.08 1"/>
+    </body>
+    <body name="goal" mocap="true" pos="0.54 0 0.181">
+      <geom name="goal_area" type="cylinder" size="0.02 0.001" contype="0" conaffinity="0"
+            rgba="0.1 0.9 0.35 0.55"/>
+    </body>
+  </worldbody>
+</mujoco>

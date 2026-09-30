@@ -1,0 +1,7 @@
+{
+  "timesteps": 409600,
+  "stage_steps": 409600,
+  "success_rate": 0.945,
+  "mean_error": 0.013705650318068528,
+  "selection": "validation success, then error"
+}

@@ -1,0 +1,16 @@
+{
+  "episodes": 200,
+  "successes": 186,
+  "success_rate": 0.93,
+  "mean_error_m": 0.016172435169461794,
+  "median_error_m": 0.010460971625160055,
+  "std_error_m": 0.023547304764329903,
+  "failure_reasons": {
+    "high_contact": 12,
+    "timeout": 2
+  },
+  "mean_success_steps": 56.45161290322581,
+  "mean_time_to_success": 2.7970860215052897,
+  "model_sha256": "7fa89ef2cb1a4ef55e80327db0f94c19c5a4d721f2e96df6d1c7d496908295b4",
+  "protocol": "Frozen PPO, replay of saved C tasks, deterministic actions"
+}
