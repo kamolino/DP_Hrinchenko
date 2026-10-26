@@ -1,0 +1,1012 @@
+{
+ "nominal": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 88,
+   "A_final_ok": 95,
+   "A_median_cm_deg": [
+    1.185,
+    2.95
+   ],
+   "R_final_ok": 91,
+   "R_median_cm_deg": [
+    1.245,
+    1.7000000000000002
+   ],
+   "M_final_ok": 91,
+   "M_median_cm_deg": [
+    1.185,
+    2.25
+   ],
+   "disturbances": 123,
+   "scenes_with_disturbance": 59,
+   "failures": {
+    "M_outside": 3,
+    "R_outside": 4,
+    "high_contact": 2,
+    "top_contact": 1
+   },
+   "mean_steps": 1900.02,
+   "repair_phases": 125,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 86,
+   "A_final_ok": 96,
+   "A_median_cm_deg": [
+    1.1749999999999998,
+    3.2
+   ],
+   "R_final_ok": 94,
+   "R_median_cm_deg": [
+    1.165,
+    1.75
+   ],
+   "M_final_ok": 90,
+   "M_median_cm_deg": [
+    1.24,
+    2.55
+   ],
+   "disturbances": 125,
+   "scenes_with_disturbance": 61,
+   "failures": {
+    "M_outside": 5,
+    "R_outside": 2,
+    "top_contact": 1,
+    "high_contact": 5
+   },
+   "mean_steps": 1890.91,
+   "repair_phases": 126,
+   "total_limit": 0
+  }
+ },
+ "friction_0.7": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 88,
+   "A_final_ok": 94,
+   "A_median_cm_deg": [
+    1.115,
+    3.7
+   ],
+   "R_final_ok": 91,
+   "R_median_cm_deg": [
+    1.255,
+    2.05
+   ],
+   "M_final_ok": 92,
+   "M_median_cm_deg": [
+    1.29,
+    2.1500000000000004
+   ],
+   "disturbances": 124,
+   "scenes_with_disturbance": 58,
+   "failures": {
+    "top_contact": 1,
+    "M_outside": 2,
+    "R_outside": 2,
+    "A_outside": 1,
+    "high_contact": 3
+   },
+   "mean_steps": 1965.98,
+   "repair_phases": 132,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 87,
+   "A_final_ok": 96,
+   "A_median_cm_deg": [
+    1.12,
+    3.3
+   ],
+   "R_final_ok": 97,
+   "R_median_cm_deg": [
+    1.21,
+    1.2
+   ],
+   "M_final_ok": 88,
+   "M_median_cm_deg": [
+    1.255,
+    2.4
+   ],
+   "disturbances": 111,
+   "scenes_with_disturbance": 57,
+   "failures": {
+    "M_outside": 7,
+    "R_outside": 3
+   },
+   "mean_steps": 1973.99,
+   "repair_phases": 121,
+   "total_limit": 0
+  }
+ },
+ "friction_1.3": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 85,
+   "A_final_ok": 94,
+   "A_median_cm_deg": [
+    1.125,
+    3.75
+   ],
+   "R_final_ok": 94,
+   "R_median_cm_deg": [
+    1.26,
+    2.1500000000000004
+   ],
+   "M_final_ok": 89,
+   "M_median_cm_deg": [
+    1.295,
+    2.6
+   ],
+   "disturbances": 119,
+   "scenes_with_disturbance": 57,
+   "failures": {
+    "M_outside": 3,
+    "R_outside": 3,
+    "high_contact": 5,
+    "A_outside": 1
+   },
+   "mean_steps": 1988.1,
+   "repair_phases": 133,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 83,
+   "A_final_ok": 93,
+   "A_median_cm_deg": [
+    1.145,
+    3.05
+   ],
+   "R_final_ok": 88,
+   "R_median_cm_deg": [
+    1.24,
+    2.1
+   ],
+   "M_final_ok": 89,
+   "M_median_cm_deg": [
+    1.3599999999999999,
+    2.45
+   ],
+   "disturbances": 140,
+   "scenes_with_disturbance": 63,
+   "failures": {
+    "M_outside": 4,
+    "R_outside": 3,
+    "high_contact": 5,
+    "top_contact": 1,
+    "A_outside": 1
+   },
+   "mean_steps": 1889.06,
+   "repair_phases": 129,
+   "total_limit": 0
+  }
+ },
+ "mass_0.5": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 85,
+   "A_final_ok": 94,
+   "A_median_cm_deg": [
+    1.17,
+    2.9
+   ],
+   "R_final_ok": 92,
+   "R_median_cm_deg": [
+    1.315,
+    1.75
+   ],
+   "M_final_ok": 89,
+   "M_median_cm_deg": [
+    1.35,
+    1.9
+   ],
+   "disturbances": 112,
+   "scenes_with_disturbance": 54,
+   "failures": {
+    "M_outside": 3,
+    "R_outside": 4,
+    "A_outside": 1,
+    "high_contact": 3,
+    "top_contact": 1
+   },
+   "mean_steps": 1985.4,
+   "repair_phases": 122,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 82,
+   "A_final_ok": 89,
+   "A_median_cm_deg": [
+    1.1549999999999998,
+    3.25
+   ],
+   "R_final_ok": 90,
+   "R_median_cm_deg": [
+    1.26,
+    2.6
+   ],
+   "M_final_ok": 88,
+   "M_median_cm_deg": [
+    1.245,
+    1.7
+   ],
+   "disturbances": 136,
+   "scenes_with_disturbance": 64,
+   "failures": {
+    "M_outside": 5,
+    "R_outside": 3,
+    "high_contact": 7,
+    "A_outside": 1
+   },
+   "mean_steps": 1920.61,
+   "repair_phases": 135,
+   "total_limit": 0
+  }
+ },
+ "mass_2": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 87,
+   "A_final_ok": 93,
+   "A_median_cm_deg": [
+    1.15,
+    3.3
+   ],
+   "R_final_ok": 92,
+   "R_median_cm_deg": [
+    1.34,
+    1.9500000000000002
+   ],
+   "M_final_ok": 91,
+   "M_median_cm_deg": [
+    1.33,
+    1.95
+   ],
+   "disturbances": 105,
+   "scenes_with_disturbance": 48,
+   "failures": {
+    "A_outside": 1,
+    "M_outside": 4,
+    "R_outside": 2,
+    "high_contact": 4
+   },
+   "mean_steps": 1838.89,
+   "repair_phases": 112,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 91,
+   "A_final_ok": 98,
+   "A_median_cm_deg": [
+    1.22,
+    3.1500000000000004
+   ],
+   "R_final_ok": 96,
+   "R_median_cm_deg": [
+    1.295,
+    1.85
+   ],
+   "M_final_ok": 91,
+   "M_median_cm_deg": [
+    1.255,
+    2.2
+   ],
+   "disturbances": 126,
+   "scenes_with_disturbance": 58,
+   "failures": {
+    "M_outside": 3,
+    "R_outside": 2,
+    "high_contact": 2
+   },
+   "mean_steps": 1975.21,
+   "repair_phases": 132,
+   "total_limit": 0
+  }
+ },
+ "noise_pos_2mm": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 86,
+   "A_final_ok": 93,
+   "A_median_cm_deg": [
+    1.255,
+    3.8
+   ],
+   "R_final_ok": 92,
+   "R_median_cm_deg": [
+    1.205,
+    1.5
+   ],
+   "M_final_ok": 92,
+   "M_median_cm_deg": [
+    1.21,
+    1.85
+   ],
+   "disturbances": 115,
+   "scenes_with_disturbance": 54,
+   "failures": {
+    "R_outside": 3,
+    "high_contact": 4,
+    "M_outside": 2,
+    "A_outside": 1
+   },
+   "mean_steps": 1990.45,
+   "repair_phases": 130,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 88,
+   "A_final_ok": 95,
+   "A_median_cm_deg": [
+    1.17,
+    2.8499999999999996
+   ],
+   "R_final_ok": 91,
+   "R_median_cm_deg": [
+    1.225,
+    1.55
+   ],
+   "M_final_ok": 91,
+   "M_median_cm_deg": [
+    1.27,
+    2.0
+   ],
+   "disturbances": 130,
+   "scenes_with_disturbance": 59,
+   "failures": {
+    "high_contact": 5,
+    "M_outside": 2,
+    "R_outside": 2
+   },
+   "mean_steps": 2071.9,
+   "repair_phases": 145,
+   "total_limit": 0
+  }
+ },
+ "noise_pos_5mm": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 85,
+   "A_final_ok": 97,
+   "A_median_cm_deg": [
+    1.23,
+    2.45
+   ],
+   "R_final_ok": 91,
+   "R_median_cm_deg": [
+    1.1749999999999998,
+    1.45
+   ],
+   "M_final_ok": 93,
+   "M_median_cm_deg": [
+    1.245,
+    2.0
+   ],
+   "disturbances": 116,
+   "scenes_with_disturbance": 59,
+   "failures": {
+    "M_outside": 3,
+    "R_outside": 2,
+    "high_contact": 2
+   },
+   "mean_steps": 2271.45,
+   "repair_phases": 142,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 82,
+   "A_final_ok": 93,
+   "A_median_cm_deg": [
+    1.2149999999999999,
+    3.4
+   ],
+   "R_final_ok": 87,
+   "R_median_cm_deg": [
+    1.2,
+    1.2
+   ],
+   "M_final_ok": 89,
+   "M_median_cm_deg": [
+    1.1400000000000001,
+    1.9
+   ],
+   "disturbances": 137,
+   "scenes_with_disturbance": 62,
+   "failures": {
+    "M_outside": 4,
+    "R_outside": 3,
+    "high_contact": 6,
+    "A_outside": 2
+   },
+   "mean_steps": 1881.96,
+   "repair_phases": 133,
+   "total_limit": 0
+  }
+ },
+ "noise_ang_1deg": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 87,
+   "A_final_ok": 97,
+   "A_median_cm_deg": [
+    1.2,
+    3.3
+   ],
+   "R_final_ok": 92,
+   "R_median_cm_deg": [
+    1.13,
+    1.85
+   ],
+   "M_final_ok": 90,
+   "M_median_cm_deg": [
+    1.2349999999999999,
+    2.5
+   ],
+   "disturbances": 103,
+   "scenes_with_disturbance": 55,
+   "failures": {
+    "M_outside": 2,
+    "R_outside": 4,
+    "high_contact": 5
+   },
+   "mean_steps": 1960.07,
+   "repair_phases": 120,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 81,
+   "A_final_ok": 95,
+   "A_median_cm_deg": [
+    1.185,
+    3.75
+   ],
+   "R_final_ok": 90,
+   "R_median_cm_deg": [
+    1.22,
+    1.35
+   ],
+   "M_final_ok": 86,
+   "M_median_cm_deg": [
+    1.36,
+    2.3
+   ],
+   "disturbances": 138,
+   "scenes_with_disturbance": 56,
+   "failures": {
+    "M_outside": 4,
+    "R_outside": 4,
+    "high_contact": 5
+   },
+   "mean_steps": 1963.12,
+   "repair_phases": 138,
+   "total_limit": 0
+  }
+ },
+ "noise_ang_3deg": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 87,
+   "A_final_ok": 96,
+   "A_median_cm_deg": [
+    1.1749999999999998,
+    2.7
+   ],
+   "R_final_ok": 93,
+   "R_median_cm_deg": [
+    1.25,
+    1.35
+   ],
+   "M_final_ok": 88,
+   "M_median_cm_deg": [
+    1.21,
+    2.75
+   ],
+   "disturbances": 109,
+   "scenes_with_disturbance": 56,
+   "failures": {
+    "M_outside": 3,
+    "R_outside": 5,
+    "high_contact": 1,
+    "A_outside": 1,
+    "top_contact": 1
+   },
+   "mean_steps": 1955.73,
+   "repair_phases": 118,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 84,
+   "A_final_ok": 94,
+   "A_median_cm_deg": [
+    1.185,
+    3.1500000000000004
+   ],
+   "R_final_ok": 90,
+   "R_median_cm_deg": [
+    1.2,
+    1.6
+   ],
+   "M_final_ok": 87,
+   "M_median_cm_deg": [
+    1.335,
+    2.4
+   ],
+   "disturbances": 119,
+   "scenes_with_disturbance": 58,
+   "failures": {
+    "high_contact": 9,
+    "M_outside": 3,
+    "R_outside": 3
+   },
+   "mean_steps": 1850.2,
+   "repair_phases": 123,
+   "total_limit": 0
+  }
+ },
+ "order_RAM": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 81,
+   "A_final_ok": 92,
+   "A_median_cm_deg": [
+    1.16,
+    2.9
+   ],
+   "R_final_ok": 84,
+   "R_median_cm_deg": [
+    1.2,
+    2.1500000000000004
+   ],
+   "M_final_ok": 88,
+   "M_median_cm_deg": [
+    1.26,
+    2.4
+   ],
+   "disturbances": 119,
+   "scenes_with_disturbance": 58,
+   "failures": {
+    "M_outside": 4,
+    "R_outside": 4,
+    "high_contact": 4,
+    "A_outside": 1
+   },
+   "mean_steps": 1943.73,
+   "repair_phases": 118,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 80,
+   "A_final_ok": 88,
+   "A_median_cm_deg": [
+    1.2650000000000001,
+    3.3
+   ],
+   "R_final_ok": 91,
+   "R_median_cm_deg": [
+    1.16,
+    1.7
+   ],
+   "M_final_ok": 89,
+   "M_median_cm_deg": [
+    1.3250000000000002,
+    2.1
+   ],
+   "disturbances": 120,
+   "scenes_with_disturbance": 59,
+   "failures": {
+    "high_contact": 4,
+    "M_outside": 4,
+    "R_outside": 2,
+    "A_outside": 2
+   },
+   "mean_steps": 2178.56,
+   "repair_phases": 135,
+   "total_limit": 0
+  }
+ },
+ "order_MRA": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 83,
+   "A_final_ok": 89,
+   "A_median_cm_deg": [
+    1.2,
+    2.8499999999999996
+   ],
+   "R_final_ok": 89,
+   "R_median_cm_deg": [
+    1.26,
+    2.55
+   ],
+   "M_final_ok": 95,
+   "M_median_cm_deg": [
+    1.21,
+    2.45
+   ],
+   "disturbances": 109,
+   "scenes_with_disturbance": 55,
+   "failures": {
+    "high_contact": 7,
+    "R_outside": 3,
+    "M_outside": 3
+   },
+   "mean_steps": 2022.17,
+   "repair_phases": 128,
+   "total_limit": 1
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 84,
+   "A_final_ok": 90,
+   "A_median_cm_deg": [
+    1.39,
+    3.2
+   ],
+   "R_final_ok": 91,
+   "R_median_cm_deg": [
+    1.2149999999999999,
+    2.2
+   ],
+   "M_final_ok": 90,
+   "M_median_cm_deg": [
+    1.245,
+    2.3
+   ],
+   "disturbances": 151,
+   "scenes_with_disturbance": 68,
+   "failures": {
+    "A_outside": 2,
+    "R_outside": 2,
+    "high_contact": 4,
+    "M_outside": 4
+   },
+   "mean_steps": 1894.4,
+   "repair_phases": 142,
+   "total_limit": 0
+  }
+ },
+ "layout_y+5": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 80,
+   "A_final_ok": 85,
+   "A_median_cm_deg": [
+    1.27,
+    3.1500000000000004
+   ],
+   "R_final_ok": 85,
+   "R_median_cm_deg": [
+    1.3599999999999999,
+    2.0
+   ],
+   "M_final_ok": 86,
+   "M_median_cm_deg": [
+    1.19,
+    2.1
+   ],
+   "disturbances": 88,
+   "scenes_with_disturbance": 52,
+   "failures": {
+    "high_contact": 6,
+    "A_outside": 9,
+    "R_outside": 3
+   },
+   "mean_steps": 1773.87,
+   "repair_phases": 91,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 78,
+   "A_final_ok": 86,
+   "A_median_cm_deg": [
+    1.275,
+    3.5
+   ],
+   "R_final_ok": 85,
+   "R_median_cm_deg": [
+    1.355,
+    2.55
+   ],
+   "M_final_ok": 88,
+   "M_median_cm_deg": [
+    1.2,
+    2.8
+   ],
+   "disturbances": 95,
+   "scenes_with_disturbance": 50,
+   "failures": {
+    "R_outside": 7,
+    "A_outside": 8,
+    "M_outside": 3,
+    "high_contact": 1
+   },
+   "mean_steps": 1944.49,
+   "repair_phases": 106,
+   "total_limit": 0
+  }
+ },
+ "layout_y-5": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 73,
+   "A_final_ok": 87,
+   "A_median_cm_deg": [
+    1.24,
+    2.85
+   ],
+   "R_final_ok": 85,
+   "R_median_cm_deg": [
+    1.4249999999999998,
+    1.55
+   ],
+   "M_final_ok": 84,
+   "M_median_cm_deg": [
+    1.22,
+    2.55
+   ],
+   "disturbances": 220,
+   "scenes_with_disturbance": 78,
+   "failures": {
+    "R_outside": 3,
+    "M_outside": 11,
+    "high_contact": 4,
+    "A_outside": 1
+   },
+   "mean_steps": 2513.21,
+   "repair_phases": 226,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 73,
+   "A_final_ok": 89,
+   "A_median_cm_deg": [
+    1.34,
+    3.6
+   ],
+   "R_final_ok": 86,
+   "R_median_cm_deg": [
+    1.3650000000000002,
+    1.95
+   ],
+   "M_final_ok": 78,
+   "M_median_cm_deg": [
+    1.4049999999999998,
+    2.95
+   ],
+   "disturbances": 192,
+   "scenes_with_disturbance": 74,
+   "failures": {
+    "R_outside": 7,
+    "M_outside": 11,
+    "high_contact": 2
+   },
+   "mean_steps": 2364.7,
+   "repair_phases": 199,
+   "total_limit": 1
+  }
+ },
+ "layout_x-5": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 76,
+   "A_final_ok": 91,
+   "A_median_cm_deg": [
+    1.18,
+    3.25
+   ],
+   "R_final_ok": 84,
+   "R_median_cm_deg": [
+    1.2,
+    1.0
+   ],
+   "M_final_ok": 87,
+   "M_median_cm_deg": [
+    1.24,
+    3.2
+   ],
+   "disturbances": 82,
+   "scenes_with_disturbance": 48,
+   "failures": {
+    "high_contact": 5,
+    "R_outside": 5,
+    "M_outside": 3,
+    "A_outside": 1
+   },
+   "mean_steps": 2310.22,
+   "repair_phases": 118,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 81,
+   "A_final_ok": 93,
+   "A_median_cm_deg": [
+    1.27,
+    2.6
+   ],
+   "R_final_ok": 85,
+   "R_median_cm_deg": [
+    1.335,
+    2.25
+   ],
+   "M_final_ok": 92,
+   "M_median_cm_deg": [
+    1.25,
+    3.05
+   ],
+   "disturbances": 121,
+   "scenes_with_disturbance": 61,
+   "failures": {
+    "R_outside": 5,
+    "high_contact": 2,
+    "M_outside": 2,
+    "top_contact": 3,
+    "A_outside": 1
+   },
+   "mean_steps": 2203.19,
+   "repair_phases": 141,
+   "total_limit": 0
+  }
+ },
+ "layout_gap6": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 85,
+   "A_final_ok": 95,
+   "A_median_cm_deg": [
+    1.2,
+    3.0
+   ],
+   "R_final_ok": 91,
+   "R_median_cm_deg": [
+    1.33,
+    2.1
+   ],
+   "M_final_ok": 88,
+   "M_median_cm_deg": [
+    1.31,
+    3.0
+   ],
+   "disturbances": 94,
+   "scenes_with_disturbance": 52,
+   "failures": {
+    "high_contact": 4,
+    "M_outside": 7,
+    "R_outside": 3,
+    "A_outside": 1
+   },
+   "mean_steps": 1910.05,
+   "repair_phases": 104,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 84,
+   "A_final_ok": 95,
+   "A_median_cm_deg": [
+    1.275,
+    2.8
+   ],
+   "R_final_ok": 95,
+   "R_median_cm_deg": [
+    1.24,
+    1.45
+   ],
+   "M_final_ok": 86,
+   "M_median_cm_deg": [
+    1.2850000000000001,
+    2.95
+   ],
+   "disturbances": 92,
+   "scenes_with_disturbance": 53,
+   "failures": {
+    "M_outside": 7,
+    "R_outside": 3,
+    "high_contact": 3
+   },
+   "mean_steps": 1965.48,
+   "repair_phases": 106,
+   "total_limit": 0
+  }
+ },
+ "delay_1": {
+  "stage2": {
+   "scenes": 100,
+   "word_success": 68,
+   "A_final_ok": 87,
+   "A_median_cm_deg": [
+    1.245,
+    3.9
+   ],
+   "R_final_ok": 76,
+   "R_median_cm_deg": [
+    1.335,
+    2.7
+   ],
+   "M_final_ok": 80,
+   "M_median_cm_deg": [
+    1.295,
+    2.45
+   ],
+   "disturbances": 106,
+   "scenes_with_disturbance": 63,
+   "failures": {
+    "high_contact": 18,
+    "M_outside": 4,
+    "R_outside": 4,
+    "top_contact": 1,
+    "A_outside": 1
+   },
+   "mean_steps": 1804.98,
+   "repair_phases": 117,
+   "total_limit": 0
+  },
+  "stage3": {
+   "scenes": 100,
+   "word_success": 70,
+   "A_final_ok": 85,
+   "A_median_cm_deg": [
+    1.185,
+    3.9
+   ],
+   "R_final_ok": 83,
+   "R_median_cm_deg": [
+    1.165,
+    1.5
+   ],
+   "M_final_ok": 81,
+   "M_median_cm_deg": [
+    1.2149999999999999,
+    2.9
+   ],
+   "disturbances": 135,
+   "scenes_with_disturbance": 64,
+   "failures": {
+    "high_contact": 14,
+    "R_outside": 4,
+    "M_outside": 7,
+    "top_contact": 1
+   },
+   "mean_steps": 1918.32,
+   "repair_phases": 136,
+   "total_limit": 0
+  }
+ },
+ "seed_spread": {
+  "stage2": {
+   "values": [
+    88,
+    81,
+    84,
+    87,
+    78
+   ],
+   "mean": 83.6,
+   "std": 4.159326868617084
+  },
+  "stage3": {
+   "values": [
+    80,
+    84,
+    86,
+    85,
+    86
+   ],
+   "mean": 84.2,
+   "std": 2.4899799195977463
+  }
+ }
+}

@@ -1,0 +1,176 @@
+{
+ "stage1_one_policy": {
+  "success": 280,
+  "episodes": 300,
+  "failures": {
+   "timeout": 10,
+   "high_contact": 8,
+   "object_outside": 1,
+   "top_contact": 1
+  },
+  "median_cm": 1.185,
+  "median_deg": 3.7,
+  "mean_steps_success": 161.5,
+  "groups": {
+   "0-40": "57/61",
+   "40-90": "73/76",
+   "90-135": "78/79",
+   "135-180": "72/84"
+  }
+ },
+ "stage1_manager": {
+  "success": 283,
+  "episodes": 300,
+  "failures": {
+   "high_contact": 4,
+   "total_limit": 8,
+   "object_outside": 3,
+   "timeout": 2
+  },
+  "median_cm": 1.0950000000000002,
+  "median_deg": 3.8
+ },
+ "stage2_letters": {
+  "A": {
+   "success": 283,
+   "episodes": 300,
+   "failures": {
+    "top_contact": 2,
+    "timeout": 11,
+    "high_contact": 2,
+    "object_outside": 2
+   },
+   "median_cm": 1.25,
+   "median_deg": 3.2,
+   "mean_steps_success": 167.97879858657245
+  },
+  "R": {
+   "success": 259,
+   "episodes": 300,
+   "failures": {
+    "timeout": 16,
+    "high_contact": 13,
+    "object_outside": 5,
+    "top_contact": 7
+   },
+   "median_cm": 1.3450000000000002,
+   "median_deg": 2.6500000000000004,
+   "mean_steps_success": 170.36293436293437
+  },
+  "M": {
+   "success": 261,
+   "episodes": 300,
+   "failures": {
+    "object_outside": 7,
+    "timeout": 16,
+    "high_contact": 15,
+    "top_contact": 1
+   },
+   "median_cm": 1.26,
+   "median_deg": 3.1,
+   "mean_steps_success": 153.095785440613
+  }
+ },
+ "stage2_word": {
+  "scenes": 300,
+  "word_success": 251,
+  "A_final_ok": 282,
+  "A_median_cm_deg": [
+   1.16,
+   2.5
+  ],
+  "R_final_ok": 273,
+  "R_median_cm_deg": [
+   1.18,
+   2.0
+  ],
+  "M_final_ok": 265,
+  "M_median_cm_deg": [
+   1.25,
+   2.3
+  ],
+  "disturbances": 363,
+  "scenes_with_disturbance": 170,
+  "failures": {
+   "M_outside": 17,
+   "R_outside": 6,
+   "high_contact": 10,
+   "A_outside": 5,
+   "top_contact": 1
+  },
+  "mean_steps": 1909.44,
+  "repair_phases": 380,
+  "total_limit": 2
+ },
+ "stage3_letters": {
+  "A": {
+   "success": 279,
+   "episodes": 300,
+   "failures": {
+    "top_contact": 2,
+    "object_outside": 2,
+    "timeout": 13,
+    "high_contact": 4
+   },
+   "median_cm": 1.25,
+   "median_deg": 3.0,
+   "mean_steps_success": 172.95698924731184
+  },
+  "R": {
+   "success": 263,
+   "episodes": 300,
+   "failures": {
+    "timeout": 12,
+    "high_contact": 14,
+    "object_outside": 6,
+    "top_contact": 5
+   },
+   "median_cm": 1.3650000000000002,
+   "median_deg": 2.55,
+   "mean_steps_success": 154.0684410646388
+  },
+  "M": {
+   "success": 269,
+   "episodes": 300,
+   "failures": {
+    "object_outside": 5,
+    "timeout": 14,
+    "high_contact": 11,
+    "top_contact": 1
+   },
+   "median_cm": 1.225,
+   "median_deg": 2.95,
+   "mean_steps_success": 153.80297397769516
+  }
+ },
+ "stage3_word": {
+  "scenes": 300,
+  "word_success": 244,
+  "A_final_ok": 277,
+  "A_median_cm_deg": [
+   1.245,
+   3.3
+  ],
+  "R_final_ok": 268,
+  "R_median_cm_deg": [
+   1.2650000000000001,
+   1.95
+  ],
+  "M_final_ok": 257,
+  "M_median_cm_deg": [
+   1.3,
+   2.3
+  ],
+  "disturbances": 372,
+  "scenes_with_disturbance": 177,
+  "failures": {
+   "M_outside": 18,
+   "high_contact": 12,
+   "R_outside": 6,
+   "A_outside": 4
+  },
+  "mean_steps": 2091.5633333333335,
+  "repair_phases": 416,
+  "total_limit": 0
+ }
+}
