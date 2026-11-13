@@ -1,0 +1,36 @@
+{
+ "summary": {
+  "scenes": 150,
+  "word_success": 127,
+  "A_final_ok": 138,
+  "A_median_cm_deg": [
+   1.16,
+   3.75
+  ],
+  "R_final_ok": 134,
+  "R_median_cm_deg": [
+   1.22,
+   2.1
+  ],
+  "M_final_ok": 136,
+  "M_median_cm_deg": [
+   1.2650000000000001,
+   2.55
+  ],
+  "disturbances": 194,
+  "scenes_with_disturbance": 91,
+  "failures": {
+   "M_outside": 7,
+   "high_contact": 7,
+   "A_outside": 2,
+   "R_outside": 3
+  },
+  "mean_steps": 1946.0,
+  "repair_phases": 204,
+  "total_limit": 1
+ },
+ "seed": 1102000,
+ "repair": 4,
+ "condition": "nominal",
+ "shared": null
+}

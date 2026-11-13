@@ -1,0 +1,78 @@
+{
+ "summary": {
+  "scenes": 500,
+  "word_success": 422,
+  "A_final_ok": 464,
+  "A_median_cm_deg": [
+   1.17,
+   2.8
+  ],
+  "R_final_ok": 461,
+  "R_median_cm_deg": [
+   1.21,
+   2.1
+  ],
+  "M_final_ok": 451,
+  "M_median_cm_deg": [
+   1.28,
+   2.1
+  ],
+  "disturbances": 586,
+  "scenes_with_disturbance": 293,
+  "failures": {
+   "high_contact": 16,
+   "A_outside": 8,
+   "M_outside": 22,
+   "R_outside": 10
+  },
+  "mean_steps": 1965.658,
+  "repair_phases": 628,
+  "total_limit": 1,
+  "median_steps": 1586.5,
+  "mean_repair_phases": 1.256,
+  "A_cm_median_p90": [
+   1.17,
+   1.89
+  ],
+  "A_deg_median_p90": [
+   2.8,
+   7.9
+  ],
+  "R_cm_median_p90": [
+   1.21,
+   1.89
+  ],
+  "R_deg_median_p90": [
+   2.1,
+   8.330000000000007
+  ],
+  "M_cm_median_p90": [
+   1.28,
+   1.9610000000000003
+  ],
+  "M_deg_median_p90": [
+   2.1,
+   8.130000000000006
+  ],
+  "categories": {
+   "success": 422,
+   "high_contact": 15,
+   "letter_outside": 40,
+   "passes_exhausted": 20,
+   "total_limit": 3
+  },
+  "mean_pieces_first_pass": 1.5887151597552684
+ },
+ "seed": 1202000,
+ "scenes": 500,
+ "repair": 4,
+ "segment_length": 0.12,
+ "attempt_budget": null,
+ "condition": "nominal",
+ "shared": "../../Faza5/models/stage3_shared.zip",
+ "policies": {
+  "A": "/home/xxgrinch/Desktop/DP_LOcal (Copy)/github/repo/Faza5/models/stage2_letter_A.zip",
+  "R": "/home/xxgrinch/Desktop/DP_LOcal (Copy)/github/repo/Faza5/models/stage2_letter_R.zip",
+  "M": "/home/xxgrinch/Desktop/DP_LOcal (Copy)/github/repo/Faza5/models/stage2_letter_M.zip"
+ }
+}

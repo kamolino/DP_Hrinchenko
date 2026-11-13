@@ -1,0 +1,78 @@
+{
+ "summary": {
+  "scenes": 500,
+  "word_success": 427,
+  "A_final_ok": 472,
+  "A_median_cm_deg": [
+   1.16,
+   2.55
+  ],
+  "R_final_ok": 461,
+  "R_median_cm_deg": [
+   1.145,
+   2.1
+  ],
+  "M_final_ok": 451,
+  "M_median_cm_deg": [
+   1.19,
+   2.3499999999999996
+  ],
+  "disturbances": 641,
+  "scenes_with_disturbance": 300,
+  "failures": {
+   "M_outside": 22,
+   "high_contact": 14,
+   "A_outside": 10,
+   "R_outside": 8
+  },
+  "mean_steps": 1965.02,
+  "repair_phases": 668,
+  "total_limit": 0,
+  "median_steps": 1645.5,
+  "mean_repair_phases": 1.336,
+  "A_cm_median_p90": [
+   1.16,
+   1.8810000000000002
+  ],
+  "A_deg_median_p90": [
+   2.55,
+   7.4
+  ],
+  "R_cm_median_p90": [
+   1.145,
+   1.8920000000000003
+  ],
+  "R_deg_median_p90": [
+   2.1,
+   8.5
+  ],
+  "M_cm_median_p90": [
+   1.19,
+   1.99
+  ],
+  "M_deg_median_p90": [
+   2.3499999999999996,
+   9.4
+  ],
+  "categories": {
+   "letter_outside": 40,
+   "success": 427,
+   "high_contact": 13,
+   "passes_exhausted": 18,
+   "total_limit": 2
+  },
+  "mean_pieces_first_pass": 1.5895522388059702
+ },
+ "seed": 1202000,
+ "scenes": 500,
+ "repair": 4,
+ "segment_length": 0.12,
+ "attempt_budget": null,
+ "condition": "nominal",
+ "shared": null,
+ "policies": {
+  "A": "../models/A4-bez/seed0/stage2_letter_A.zip",
+  "R": "../models/A4-bez/seed0/stage2_letter_R.zip",
+  "M": "../models/A4-bez/seed0/stage2_letter_M.zip"
+ }
+}

@@ -1,0 +1,12302 @@
+[
+ {
+  "id": 0,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 235,
+    "cm": 0.99,
+    "deg": 2.8,
+    "start_cm": 27.9,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 151,
+    "cm": 1.09,
+    "deg": 2.3,
+    "start_cm": 16.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 360,
+    "cm": 0.63,
+    "deg": 0.9,
+    "start_cm": 27.5,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 65,
+    "cm": 1.11,
+    "deg": 0.0,
+    "start_cm": 9.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 133,
+    "cm": 1.34,
+    "deg": 0.1,
+    "start_cm": 5.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 45,
+    "cm": 1.13,
+    "deg": 1.5,
+    "start_cm": 3.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "M",
+    "success": true,
+    "steps": 66,
+    "cm": 0.76,
+    "deg": 9.5,
+    "start_cm": 5.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.42,
+    "deg": 2.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.13,
+    "deg": 1.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.76,
+    "deg": 9.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2953
+ },
+ {
+  "id": 1,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 168,
+    "cm": 1.6,
+    "deg": 4.9,
+    "start_cm": 12.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 43,
+    "cm": 0.98,
+    "deg": 6.0,
+    "start_cm": 6.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 84,
+    "cm": 0.46,
+    "deg": 1.9,
+    "start_cm": 2.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.57,
+    "deg": 6.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.96,
+    "deg": 6.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.46,
+    "deg": 1.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1173
+ },
+ {
+  "id": 2,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 44,
+    "cm": 1.19,
+    "deg": 4.1,
+    "start_cm": 6.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 117,
+    "cm": 0.74,
+    "deg": 0.4,
+    "start_cm": 17.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 146,
+    "cm": 0.51,
+    "deg": 1.5,
+    "start_cm": 11.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.15,
+    "deg": 4.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.49,
+    "deg": 0.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.51,
+    "deg": 1.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1184
+ },
+ {
+  "id": 3,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 156,
+    "cm": 1.17,
+    "deg": 0.1,
+    "start_cm": 12.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 153,
+    "cm": 1.75,
+    "deg": 2.8,
+    "start_cm": 10.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 67,
+    "cm": 1.06,
+    "deg": 0.4,
+    "start_cm": 10.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 77,
+    "cm": 1.15,
+    "deg": 3.7,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.15,
+    "deg": 3.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.75,
+    "deg": 2.7,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.05,
+    "deg": 0.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1624
+ },
+ {
+  "id": 4,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 283,
+    "cm": 0.73,
+    "deg": 1.6,
+    "start_cm": 19.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 110,
+    "cm": 0.22,
+    "deg": 3.7,
+    "start_cm": 10.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 105,
+    "cm": 1.3,
+    "deg": 0.0,
+    "start_cm": 4.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.41,
+    "deg": 3.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.26,
+    "deg": 1.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.3,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1375
+ },
+ {
+  "id": 5,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 225,
+    "cm": 1.27,
+    "deg": 4.4,
+    "start_cm": 12.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 147,
+    "cm": 1.0,
+    "deg": 0.0,
+    "start_cm": 18.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 218,
+    "cm": 1.14,
+    "deg": 2.4,
+    "start_cm": 29.9,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 68,
+    "cm": 0.92,
+    "deg": 2.8,
+    "start_cm": 5.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 96,
+    "cm": 1.64,
+    "deg": 4.5,
+    "start_cm": 9.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 124,
+    "cm": 1.22,
+    "deg": 0.1,
+    "start_cm": 4.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 77,
+    "cm": 0.95,
+    "deg": 0.6,
+    "start_cm": 2.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.85,
+    "deg": 9.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.95,
+    "deg": 0.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.21,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 3003
+ },
+ {
+  "id": 6,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 134,
+    "cm": 1.76,
+    "deg": 4.1,
+    "start_cm": 18.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 260,
+    "cm": 1.15,
+    "deg": 2.3,
+    "start_cm": 17.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 691,
+    "cm": 27.89,
+    "deg": 46.2,
+    "start_cm": 27.1,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "M: M_outside",
+  "disturbed": [
+   "A"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 5.32,
+    "deg": 43.8,
+    "ok": false
+   },
+   "R": {
+    "cm": 1.15,
+    "deg": 2.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 27.89,
+    "deg": 46.2,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1819
+ },
+ {
+  "id": 7,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 224,
+    "cm": 1.47,
+    "deg": 8.2,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 0,
+    "cm": 11.94,
+    "deg": 121.8,
+    "start_cm": 11.9,
+    "route": [
+     "final"
+    ],
+    "mode": "move"
+   }
+  },
+  "repairs": [],
+  "failure": "R: high_contact",
+  "disturbed": [],
+  "failure_mode": "move",
+  "contact_letter": "A",
+  "final": {
+   "A": {
+    "cm": 1.68,
+    "deg": 9.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 11.94,
+    "deg": 121.8,
+    "ok": false
+   },
+   "M": {
+    "cm": 6.88,
+    "deg": 65.3,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 520
+ },
+ {
+  "id": 8,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 130,
+    "cm": 1.22,
+    "deg": 0.1,
+    "start_cm": 7.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 160,
+    "cm": 1.07,
+    "deg": 2.4,
+    "start_cm": 15.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 105,
+    "cm": 1.47,
+    "deg": 1.9,
+    "start_cm": 7.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.23,
+    "deg": 0.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.06,
+    "deg": 2.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.47,
+    "deg": 1.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1273
+ },
+ {
+  "id": 9,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 177,
+    "cm": 1.92,
+    "deg": 0.6,
+    "start_cm": 12.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 56,
+    "cm": 0.82,
+    "deg": 1.9,
+    "start_cm": 9.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 199,
+    "cm": 1.15,
+    "deg": 7.1,
+    "start_cm": 10.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.91,
+    "deg": 0.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.82,
+    "deg": 1.9,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.15,
+    "deg": 7.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1164
+ },
+ {
+  "id": 10,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 148,
+    "cm": 1.36,
+    "deg": 2.7,
+    "start_cm": 14.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 73,
+    "cm": 1.15,
+    "deg": 0.4,
+    "start_cm": 4.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 90,
+    "cm": 1.13,
+    "deg": 1.4,
+    "start_cm": 6.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 13,
+    "cm": 0.58,
+    "deg": 3.8,
+    "start_cm": 1.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 43,
+    "cm": 0.81,
+    "deg": 0.4,
+    "start_cm": 3.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 62,
+    "cm": 0.77,
+    "deg": 2.9,
+    "start_cm": 4.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.58,
+    "deg": 3.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.74,
+    "deg": 2.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.77,
+    "deg": 2.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2185
+ },
+ {
+  "id": 11,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 181,
+    "cm": 1.63,
+    "deg": 3.3,
+    "start_cm": 13.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 148,
+    "cm": 1.26,
+    "deg": 4.0,
+    "start_cm": 13.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 1100,
+    "cm": 15.54,
+    "deg": 179.8,
+    "start_cm": 13.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "M",
+    "success": true,
+    "steps": 355,
+    "cm": 1.6,
+    "deg": 3.7,
+    "start_cm": 15.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 61,
+    "cm": 1.7,
+    "deg": 6.5,
+    "start_cm": 4.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "A",
+    "success": true,
+    "steps": 69,
+    "cm": 1.55,
+    "deg": 5.8,
+    "start_cm": 3.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.55,
+    "deg": 5.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.69,
+    "deg": 6.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.64,
+    "deg": 2.7,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 3519
+ },
+ {
+  "id": 12,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 148,
+    "cm": 1.09,
+    "deg": 4.0,
+    "start_cm": 14.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 191,
+    "cm": 1.53,
+    "deg": 4.0,
+    "start_cm": 13.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 462,
+    "cm": 0.76,
+    "deg": 1.8,
+    "start_cm": 24.1,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 152,
+    "cm": 1.2,
+    "deg": 0.0,
+    "start_cm": 8.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 59,
+    "cm": 0.91,
+    "deg": 0.6,
+    "start_cm": 5.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.1,
+    "deg": 2.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.14,
+    "deg": 0.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.91,
+    "deg": 0.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2474
+ },
+ {
+  "id": 13,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 128,
+    "cm": 1.42,
+    "deg": 2.8,
+    "start_cm": 7.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 240,
+    "cm": 1.35,
+    "deg": 5.5,
+    "start_cm": 15.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 159,
+    "cm": 0.92,
+    "deg": 1.3,
+    "start_cm": 13.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.43,
+    "deg": 4.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.16,
+    "deg": 5.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.92,
+    "deg": 1.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1404
+ },
+ {
+  "id": 14,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 135,
+    "cm": 0.81,
+    "deg": 2.2,
+    "start_cm": 16.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 123,
+    "cm": 1.07,
+    "deg": 8.4,
+    "start_cm": 2.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 254,
+    "cm": 1.3,
+    "deg": 2.0,
+    "start_cm": 7.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 156,
+    "cm": 1.11,
+    "deg": 3.7,
+    "start_cm": 6.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 165,
+    "cm": 1.26,
+    "deg": 0.0,
+    "start_cm": 13.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 17,
+    "cm": 0.98,
+    "deg": 4.8,
+    "start_cm": 0.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 81,
+    "cm": 1.49,
+    "deg": 0.8,
+    "start_cm": 1.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 260,
+    "cm": 1.28,
+    "deg": 0.2,
+    "start_cm": 2.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "A",
+    "success": true,
+    "steps": 89,
+    "cm": 1.91,
+    "deg": 1.4,
+    "start_cm": 1.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "M",
+    "success": true,
+    "steps": 47,
+    "cm": 1.14,
+    "deg": 0.1,
+    "start_cm": 2.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "A",
+   "R",
+   "A",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.95,
+    "deg": 0.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.91,
+    "deg": 3.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.14,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 4253
+ },
+ {
+  "id": 15,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 112,
+    "cm": 1.06,
+    "deg": 3.9,
+    "start_cm": 12.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 114,
+    "cm": 1.06,
+    "deg": 2.8,
+    "start_cm": 18.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 61,
+    "cm": 20.56,
+    "deg": 112.4,
+    "start_cm": 20.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "M: A_outside",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 11.11,
+    "deg": 24.2,
+    "ok": false
+   },
+   "R": {
+    "cm": 2.45,
+    "deg": 59.8,
+    "ok": false
+   },
+   "M": {
+    "cm": 20.56,
+    "deg": 112.4,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1165
+ },
+ {
+  "id": 16,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 310,
+    "cm": 0.9,
+    "deg": 1.9,
+    "start_cm": 28.5,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 117,
+    "cm": 1.79,
+    "deg": 2.1,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 117,
+    "cm": 0.97,
+    "deg": 3.0,
+    "start_cm": 4.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 83,
+    "cm": 1.06,
+    "deg": 6.6,
+    "start_cm": 6.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 16,
+    "cm": 1.42,
+    "deg": 0.9,
+    "start_cm": 2.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.98,
+    "deg": 8.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.42,
+    "deg": 0.9,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.27,
+    "deg": 3.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2106
+ },
+ {
+  "id": 17,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 289,
+    "cm": 0.65,
+    "deg": 1.7,
+    "start_cm": 29.9,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 1100,
+    "cm": 19.6,
+    "deg": 162.3,
+    "start_cm": 18.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 291,
+    "cm": 1.23,
+    "deg": 0.0,
+    "start_cm": 26.4,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 82,
+    "cm": 1.86,
+    "deg": 1.6,
+    "start_cm": 3.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 198,
+    "cm": 0.78,
+    "deg": 0.0,
+    "start_cm": 19.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 11,
+    "cm": 1.33,
+    "deg": 4.9,
+    "start_cm": 2.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.33,
+    "deg": 4.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.63,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.21,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 3727
+ },
+ {
+  "id": 18,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 131,
+    "cm": 1.21,
+    "deg": 2.3,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 76,
+    "cm": 1.74,
+    "deg": 5.3,
+    "start_cm": 4.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 92,
+    "cm": 0.72,
+    "deg": 0.3,
+    "start_cm": 18.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 25,
+    "cm": 1.22,
+    "deg": 0.3,
+    "start_cm": 5.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 66,
+    "cm": 0.86,
+    "deg": 0.0,
+    "start_cm": 3.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.17,
+    "deg": 0.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.86,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.72,
+    "deg": 0.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1854
+ },
+ {
+  "id": 19,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 153,
+    "cm": 0.93,
+    "deg": 6.1,
+    "start_cm": 7.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 179,
+    "cm": 1.35,
+    "deg": 1.4,
+    "start_cm": 21.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 199,
+    "cm": 1.23,
+    "deg": 0.3,
+    "start_cm": 25.9,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 183,
+    "cm": 1.15,
+    "deg": 0.4,
+    "start_cm": 4.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 87,
+    "cm": 1.0,
+    "deg": 3.6,
+    "start_cm": 8.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.92,
+    "deg": 6.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.16,
+    "deg": 0.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.0,
+    "deg": 3.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2264
+ },
+ {
+  "id": 20,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 89,
+    "cm": 1.27,
+    "deg": 4.6,
+    "start_cm": 3.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 84,
+    "cm": 1.07,
+    "deg": 0.1,
+    "start_cm": 9.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 206,
+    "cm": 1.51,
+    "deg": 6.4,
+    "start_cm": 14.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.16,
+    "deg": 5.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.95,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.51,
+    "deg": 6.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1256
+ },
+ {
+  "id": 21,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 58,
+    "cm": 0.93,
+    "deg": 1.6,
+    "start_cm": 6.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 75,
+    "cm": 1.45,
+    "deg": 3.6,
+    "start_cm": 7.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 73,
+    "cm": 0.89,
+    "deg": 5.0,
+    "start_cm": 9.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 29,
+    "cm": 1.17,
+    "deg": 4.9,
+    "start_cm": 5.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 63,
+    "cm": 0.6,
+    "deg": 0.0,
+    "start_cm": 2.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.1,
+    "deg": 8.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.6,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.9,
+    "deg": 5.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1762
+ },
+ {
+  "id": 22,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 215,
+    "cm": 1.97,
+    "deg": 3.6,
+    "start_cm": 17.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 148,
+    "cm": 1.26,
+    "deg": 1.6,
+    "start_cm": 20.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 131,
+    "cm": 1.53,
+    "deg": 1.1,
+    "start_cm": 9.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 79,
+    "cm": 1.11,
+    "deg": 6.1,
+    "start_cm": 9.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 27,
+    "cm": 0.56,
+    "deg": 6.2,
+    "start_cm": 0.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.14,
+    "deg": 5.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.56,
+    "deg": 6.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.52,
+    "deg": 1.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2063
+ },
+ {
+  "id": 23,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 94,
+    "cm": 1.53,
+    "deg": 1.4,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 79,
+    "cm": 0.7,
+    "deg": 0.1,
+    "start_cm": 9.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 73,
+    "cm": 0.72,
+    "deg": 0.0,
+    "start_cm": 9.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.58,
+    "deg": 0.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.4,
+    "deg": 0.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.72,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1123
+ },
+ {
+  "id": 24,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 79,
+    "cm": 1.62,
+    "deg": 7.5,
+    "start_cm": 4.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 114,
+    "cm": 1.09,
+    "deg": 1.9,
+    "start_cm": 9.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 92,
+    "cm": 1.35,
+    "deg": 0.0,
+    "start_cm": 10.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 27,
+    "cm": 1.62,
+    "deg": 6.1,
+    "start_cm": 4.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.62,
+    "deg": 6.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.04,
+    "deg": 2.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.23,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1483
+ },
+ {
+  "id": 25,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 152,
+    "cm": 0.66,
+    "deg": 4.1,
+    "start_cm": 1.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 86,
+    "cm": 0.78,
+    "deg": 0.0,
+    "start_cm": 10.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 68,
+    "cm": 1.68,
+    "deg": 0.1,
+    "start_cm": 7.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.65,
+    "deg": 6.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.41,
+    "deg": 0.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.68,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1184
+ },
+ {
+  "id": 26,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 63,
+    "cm": 1.23,
+    "deg": 7.7,
+    "start_cm": 8.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 252,
+    "cm": 1.2,
+    "deg": 2.7,
+    "start_cm": 18.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 177,
+    "cm": 1.22,
+    "deg": 0.0,
+    "start_cm": 6.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.76,
+    "deg": 2.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.21,
+    "deg": 2.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.22,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1369
+ },
+ {
+  "id": 27,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 234,
+    "cm": 1.88,
+    "deg": 3.6,
+    "start_cm": 15.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 102,
+    "cm": 1.32,
+    "deg": 0.0,
+    "start_cm": 15.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 116,
+    "cm": 1.04,
+    "deg": 0.1,
+    "start_cm": 10.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 69,
+    "cm": 1.15,
+    "deg": 0.0,
+    "start_cm": 4.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 120,
+    "cm": 1.38,
+    "deg": 2.0,
+    "start_cm": 5.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 82,
+    "cm": 1.89,
+    "deg": 0.5,
+    "start_cm": 3.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.49,
+    "deg": 1.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.89,
+    "deg": 0.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.87,
+    "deg": 0.7,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2478
+ },
+ {
+  "id": 28,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 140,
+    "cm": 0.77,
+    "deg": 2.1,
+    "start_cm": 12.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 128,
+    "cm": 0.82,
+    "deg": 0.0,
+    "start_cm": 13.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 75,
+    "cm": 1.21,
+    "deg": 2.2,
+    "start_cm": 10.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.76,
+    "deg": 2.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.7,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.21,
+    "deg": 2.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1073
+ },
+ {
+  "id": 29,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 98,
+    "cm": 2.0,
+    "deg": 4.3,
+    "start_cm": 2.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 183,
+    "cm": 1.09,
+    "deg": 0.0,
+    "start_cm": 16.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 233,
+    "cm": 0.83,
+    "deg": 0.4,
+    "start_cm": 12.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 2.0,
+    "deg": 4.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.88,
+    "deg": 2.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.83,
+    "deg": 0.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1392
+ },
+ {
+  "id": 30,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 115,
+    "cm": 1.1,
+    "deg": 5.2,
+    "start_cm": 14.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 51,
+    "cm": 0.98,
+    "deg": 4.0,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 177,
+    "cm": 1.72,
+    "deg": 3.9,
+    "start_cm": 11.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 16,
+    "cm": 1.51,
+    "deg": 4.8,
+    "start_cm": 1.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.98,
+    "deg": 4.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.51,
+    "deg": 4.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.69,
+    "deg": 4.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1386
+ },
+ {
+  "id": 31,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 86,
+    "cm": 1.4,
+    "deg": 3.7,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 108,
+    "cm": 1.22,
+    "deg": 0.4,
+    "start_cm": 3.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 93,
+    "cm": 0.12,
+    "deg": 1.8,
+    "start_cm": 7.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 13,
+    "cm": 1.89,
+    "deg": 9.5,
+    "start_cm": 1.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.89,
+    "deg": 9.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.22,
+    "deg": 0.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.05,
+    "deg": 3.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1471
+ },
+ {
+  "id": 32,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 219,
+    "cm": 0.54,
+    "deg": 1.1,
+    "start_cm": 17.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 60,
+    "cm": 1.3,
+    "deg": 0.8,
+    "start_cm": 12.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 260,
+    "cm": 1.18,
+    "deg": 0.1,
+    "start_cm": 26.4,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 71,
+    "cm": 0.68,
+    "deg": 1.4,
+    "start_cm": 8.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.57,
+    "deg": 3.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.68,
+    "deg": 1.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.18,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1780
+ },
+ {
+  "id": 33,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 120,
+    "cm": 1.12,
+    "deg": 4.9,
+    "start_cm": 17.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 121,
+    "cm": 0.74,
+    "deg": 0.3,
+    "start_cm": 17.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 54,
+    "cm": 1.4,
+    "deg": 0.3,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.08,
+    "deg": 3.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.5,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.4,
+    "deg": 0.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1172
+ },
+ {
+  "id": 34,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 239,
+    "cm": 1.22,
+    "deg": 0.7,
+    "start_cm": 27.5,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 98,
+    "cm": 1.91,
+    "deg": 0.0,
+    "start_cm": 12.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 276,
+    "cm": 0.42,
+    "deg": 0.9,
+    "start_cm": 2.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 61,
+    "cm": 1.48,
+    "deg": 2.5,
+    "start_cm": 6.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 100,
+    "cm": 0.28,
+    "deg": 1.3,
+    "start_cm": 6.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.28,
+    "deg": 1.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.46,
+    "deg": 2.7,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.4,
+    "deg": 0.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2238
+ },
+ {
+  "id": 35,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 225,
+    "cm": 1.62,
+    "deg": 0.1,
+    "start_cm": 19.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 270,
+    "cm": 1.49,
+    "deg": 4.6,
+    "start_cm": 14.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 109,
+    "cm": 1.32,
+    "deg": 0.0,
+    "start_cm": 13.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 131,
+    "cm": 0.97,
+    "deg": 1.7,
+    "start_cm": 11.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 222,
+    "cm": 1.31,
+    "deg": 2.2,
+    "start_cm": 2.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "A",
+    "success": true,
+    "steps": 168,
+    "cm": 0.99,
+    "deg": 0.1,
+    "start_cm": 13.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "M",
+    "success": true,
+    "steps": 14,
+    "cm": 0.71,
+    "deg": 3.0,
+    "start_cm": 0.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "R",
+    "success": true,
+    "steps": 45,
+    "cm": 0.84,
+    "deg": 2.7,
+    "start_cm": 3.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.95,
+    "deg": 0.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.84,
+    "deg": 2.7,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.96,
+    "deg": 6.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 3525
+ },
+ {
+  "id": 36,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 112,
+    "cm": 0.96,
+    "deg": 5.4,
+    "start_cm": 7.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 62,
+    "cm": 1.48,
+    "deg": 2.4,
+    "start_cm": 14.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 136,
+    "cm": 1.34,
+    "deg": 1.9,
+    "start_cm": 14.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.91,
+    "deg": 6.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.4,
+    "deg": 2.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.34,
+    "deg": 1.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1187
+ },
+ {
+  "id": 37,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 309,
+    "cm": 1.53,
+    "deg": 1.1,
+    "start_cm": 14.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 153,
+    "cm": 1.55,
+    "deg": 0.5,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 125,
+    "cm": 1.65,
+    "deg": 7.5,
+    "start_cm": 5.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.53,
+    "deg": 1.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.61,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.65,
+    "deg": 7.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1464
+ },
+ {
+  "id": 38,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 89,
+    "cm": 1.68,
+    "deg": 3.3,
+    "start_cm": 5.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 225,
+    "cm": 1.15,
+    "deg": 0.2,
+    "start_cm": 13.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 75,
+    "cm": 1.21,
+    "deg": 4.9,
+    "start_cm": 5.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.7,
+    "deg": 2.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.04,
+    "deg": 0.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.21,
+    "deg": 4.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1265
+ },
+ {
+  "id": 39,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 82,
+    "cm": 1.42,
+    "deg": 3.9,
+    "start_cm": 5.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 192,
+    "cm": 1.15,
+    "deg": 0.9,
+    "start_cm": 20.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 97,
+    "cm": 1.09,
+    "deg": 5.8,
+    "start_cm": 14.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.37,
+    "deg": 3.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.09,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.09,
+    "deg": 5.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1105
+ },
+ {
+  "id": 40,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 152,
+    "cm": 1.29,
+    "deg": 0.0,
+    "start_cm": 17.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 78,
+    "cm": 1.05,
+    "deg": 0.0,
+    "start_cm": 8.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 135,
+    "cm": 1.74,
+    "deg": 0.0,
+    "start_cm": 6.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 17,
+    "cm": 1.81,
+    "deg": 5.7,
+    "start_cm": 1.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.81,
+    "deg": 5.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.9,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.73,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1553
+ },
+ {
+  "id": 41,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 90,
+    "cm": 1.3,
+    "deg": 8.0,
+    "start_cm": 3.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 87,
+    "cm": 1.52,
+    "deg": 4.3,
+    "start_cm": 3.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 99,
+    "cm": 0.92,
+    "deg": 0.3,
+    "start_cm": 4.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 45,
+    "cm": 1.42,
+    "deg": 1.9,
+    "start_cm": 2.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 87,
+    "cm": 0.53,
+    "deg": 4.7,
+    "start_cm": 2.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 81,
+    "cm": 1.45,
+    "deg": 3.2,
+    "start_cm": 3.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.39,
+    "deg": 2.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.48,
+    "deg": 2.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.45,
+    "deg": 3.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2247
+ },
+ {
+  "id": 42,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 69,
+    "cm": 1.87,
+    "deg": 6.4,
+    "start_cm": 4.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 162,
+    "cm": 1.49,
+    "deg": 2.0,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 1000,
+    "cm": 11.12,
+    "deg": 167.9,
+    "start_cm": 10.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "M",
+    "success": false,
+    "steps": 1000,
+    "cm": 12.34,
+    "deg": 162.6,
+    "start_cm": 11.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": false,
+    "steps": 7,
+    "cm": 12.62,
+    "deg": 165.3,
+    "start_cm": 12.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "M: M_outside",
+  "disturbed": [],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 1.76,
+    "deg": 8.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.5,
+    "deg": 2.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 12.62,
+    "deg": 165.3,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 3557
+ },
+ {
+  "id": 43,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 83,
+    "cm": 1.85,
+    "deg": 4.2,
+    "start_cm": 5.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 143,
+    "cm": 0.75,
+    "deg": 4.1,
+    "start_cm": 6.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 91,
+    "cm": 1.57,
+    "deg": 0.9,
+    "start_cm": 6.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.93,
+    "deg": 6.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.65,
+    "deg": 2.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.57,
+    "deg": 0.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1194
+ },
+ {
+  "id": 44,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 48,
+    "cm": 1.69,
+    "deg": 4.0,
+    "start_cm": 8.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 208,
+    "cm": 1.87,
+    "deg": 0.0,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 141,
+    "cm": 0.77,
+    "deg": 0.2,
+    "start_cm": 17.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 248,
+    "cm": 1.55,
+    "deg": 0.4,
+    "start_cm": 2.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 61,
+    "cm": 1.43,
+    "deg": 0.6,
+    "start_cm": 2.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.61,
+    "deg": 2.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.62,
+    "deg": 0.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.43,
+    "deg": 0.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2170
+ },
+ {
+  "id": 45,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 273,
+    "cm": 0.64,
+    "deg": 1.6,
+    "start_cm": 24.8,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 191,
+    "cm": 1.26,
+    "deg": 0.0,
+    "start_cm": 20.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 534,
+    "cm": 1.16,
+    "deg": 0.2,
+    "start_cm": 21.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 100,
+    "cm": 1.71,
+    "deg": 3.1,
+    "start_cm": 7.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 227,
+    "cm": 1.21,
+    "deg": 3.5,
+    "start_cm": 11.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.21,
+    "deg": 3.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.71,
+    "deg": 3.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.16,
+    "deg": 0.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2788
+ },
+ {
+  "id": 46,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 118,
+    "cm": 1.99,
+    "deg": 4.1,
+    "start_cm": 6.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 107,
+    "cm": 1.24,
+    "deg": 0.4,
+    "start_cm": 15.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 206,
+    "cm": 1.42,
+    "deg": 2.5,
+    "start_cm": 4.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 60,
+    "cm": 0.62,
+    "deg": 0.1,
+    "start_cm": 2.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 53,
+    "cm": 0.94,
+    "deg": 0.6,
+    "start_cm": 3.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 72,
+    "cm": 1.42,
+    "deg": 1.1,
+    "start_cm": 5.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.42,
+    "deg": 1.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.88,
+    "deg": 0.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.47,
+    "deg": 1.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2372
+ },
+ {
+  "id": 47,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 282,
+    "cm": 0.79,
+    "deg": 0.1,
+    "start_cm": 13.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 158,
+    "cm": 1.12,
+    "deg": 0.6,
+    "start_cm": 12.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 273,
+    "cm": 0.98,
+    "deg": 5.8,
+    "start_cm": 31.8,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.73,
+    "deg": 0.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.22,
+    "deg": 7.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.98,
+    "deg": 5.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1444
+ },
+ {
+  "id": 48,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 117,
+    "cm": 0.94,
+    "deg": 7.5,
+    "start_cm": 14.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 82,
+    "cm": 0.88,
+    "deg": 0.4,
+    "start_cm": 8.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 95,
+    "cm": 1.31,
+    "deg": 3.4,
+    "start_cm": 7.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.59,
+    "deg": 9.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.74,
+    "deg": 0.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.31,
+    "deg": 3.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1171
+ },
+ {
+  "id": 49,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 125,
+    "cm": 1.77,
+    "deg": 2.8,
+    "start_cm": 10.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 157,
+    "cm": 1.54,
+    "deg": 2.5,
+    "start_cm": 14.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 95,
+    "cm": 1.13,
+    "deg": 3.4,
+    "start_cm": 8.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 70,
+    "cm": 0.96,
+    "deg": 4.1,
+    "start_cm": 2.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.96,
+    "deg": 4.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.53,
+    "deg": 2.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.1,
+    "deg": 3.7,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1618
+ },
+ {
+  "id": 50,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 218,
+    "cm": 1.45,
+    "deg": 0.0,
+    "start_cm": 26.1,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 224,
+    "cm": 1.77,
+    "deg": 3.5,
+    "start_cm": 19.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 43,
+    "cm": 0.96,
+    "deg": 7.0,
+    "start_cm": 8.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": false,
+    "steps": 48,
+    "cm": 21.69,
+    "deg": 54.6,
+    "start_cm": 21.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "A: M_outside",
+  "disturbed": [
+   "A",
+   "R",
+   "M"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 21.69,
+    "deg": 54.6,
+    "ok": false
+   },
+   "R": {
+    "cm": 1.53,
+    "deg": 54.4,
+    "ok": false
+   },
+   "M": {
+    "cm": 10.59,
+    "deg": 24.4,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1704
+ },
+ {
+  "id": 51,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 83,
+    "cm": 1.29,
+    "deg": 6.0,
+    "start_cm": 0.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 164,
+    "cm": 1.92,
+    "deg": 8.0,
+    "start_cm": 12.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 125,
+    "cm": 0.57,
+    "deg": 6.6,
+    "start_cm": 9.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 114,
+    "cm": 0.26,
+    "deg": 2.4,
+    "start_cm": 8.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 113,
+    "cm": 1.72,
+    "deg": 2.3,
+    "start_cm": 2.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 44,
+    "cm": 1.28,
+    "deg": 6.7,
+    "start_cm": 2.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 65,
+    "cm": 0.26,
+    "deg": 9.6,
+    "start_cm": 3.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "M",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.23,
+    "deg": 8.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.45,
+    "deg": 1.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.26,
+    "deg": 9.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2756
+ },
+ {
+  "id": 52,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 108,
+    "cm": 1.26,
+    "deg": 4.5,
+    "start_cm": 8.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 154,
+    "cm": 1.95,
+    "deg": 5.6,
+    "start_cm": 18.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 166,
+    "cm": 1.28,
+    "deg": 1.8,
+    "start_cm": 16.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.23,
+    "deg": 4.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.95,
+    "deg": 5.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.28,
+    "deg": 1.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1305
+ },
+ {
+  "id": 53,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 230,
+    "cm": 1.8,
+    "deg": 2.2,
+    "start_cm": 9.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 86,
+    "cm": 1.6,
+    "deg": 1.3,
+    "start_cm": 16.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 115,
+    "cm": 1.45,
+    "deg": 2.2,
+    "start_cm": 2.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.79,
+    "deg": 3.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.6,
+    "deg": 1.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.45,
+    "deg": 2.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1309
+ },
+ {
+  "id": 54,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 111,
+    "cm": 1.51,
+    "deg": 4.4,
+    "start_cm": 11.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 44,
+    "cm": 1.33,
+    "deg": 0.1,
+    "start_cm": 3.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 79,
+    "cm": 1.3,
+    "deg": 1.2,
+    "start_cm": 3.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.51,
+    "deg": 4.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.31,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.3,
+    "deg": 1.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1113
+ },
+ {
+  "id": 55,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 230,
+    "cm": 0.66,
+    "deg": 0.4,
+    "start_cm": 14.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 153,
+    "cm": 1.2,
+    "deg": 0.3,
+    "start_cm": 18.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 18,
+    "cm": 15.64,
+    "deg": 62.3,
+    "start_cm": 13.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "M: M_outside",
+  "disturbed": [],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 0.62,
+    "deg": 1.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.13,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 15.64,
+    "deg": 62.3,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1278
+ },
+ {
+  "id": 56,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 272,
+    "cm": 1.38,
+    "deg": 1.5,
+    "start_cm": 12.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 189,
+    "cm": 1.5,
+    "deg": 1.1,
+    "start_cm": 16.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 168,
+    "cm": 1.94,
+    "deg": 7.6,
+    "start_cm": 12.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 20,
+    "cm": 1.02,
+    "deg": 3.3,
+    "start_cm": 3.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.31,
+    "deg": 1.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.02,
+    "deg": 3.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.65,
+    "deg": 8.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1819
+ },
+ {
+  "id": 57,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 110,
+    "cm": 1.49,
+    "deg": 1.6,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 91,
+    "cm": 1.04,
+    "deg": 0.0,
+    "start_cm": 13.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 134,
+    "cm": 1.34,
+    "deg": 1.6,
+    "start_cm": 11.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.49,
+    "deg": 1.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.94,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.34,
+    "deg": 1.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1213
+ },
+ {
+  "id": 58,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 310,
+    "cm": 0.73,
+    "deg": 0.1,
+    "start_cm": 27.4,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 170,
+    "cm": 1.41,
+    "deg": 2.1,
+    "start_cm": 14.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 170,
+    "cm": 1.17,
+    "deg": 3.0,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 79,
+    "cm": 0.98,
+    "deg": 4.4,
+    "start_cm": 2.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 29,
+    "cm": 1.69,
+    "deg": 7.2,
+    "start_cm": 3.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.0,
+    "deg": 3.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.69,
+    "deg": 7.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.18,
+    "deg": 2.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2222
+ },
+ {
+  "id": 59,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 224,
+    "cm": 0.83,
+    "deg": 3.2,
+    "start_cm": 17.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 134,
+    "cm": 1.17,
+    "deg": 0.7,
+    "start_cm": 16.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 167,
+    "cm": 1.66,
+    "deg": 3.3,
+    "start_cm": 29.7,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 24,
+    "cm": 1.89,
+    "deg": 6.3,
+    "start_cm": 2.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.66,
+    "deg": 2.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.89,
+    "deg": 6.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.56,
+    "deg": 5.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1719
+ },
+ {
+  "id": 60,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 267,
+    "cm": 0.54,
+    "deg": 3.0,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 88,
+    "cm": 1.03,
+    "deg": 2.7,
+    "start_cm": 15.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 173,
+    "cm": 1.03,
+    "deg": 2.3,
+    "start_cm": 20.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 202,
+    "cm": 1.41,
+    "deg": 2.4,
+    "start_cm": 8.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 99,
+    "cm": 1.28,
+    "deg": 0.2,
+    "start_cm": 9.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.48,
+    "deg": 4.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.41,
+    "deg": 2.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.28,
+    "deg": 0.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2292
+ },
+ {
+  "id": 61,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 368,
+    "cm": 0.95,
+    "deg": 1.8,
+    "start_cm": 26.5,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 1100,
+    "cm": 22.51,
+    "deg": 179.8,
+    "start_cm": 19.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 76,
+    "cm": 0.93,
+    "deg": 0.1,
+    "start_cm": 18.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": false,
+    "steps": 665,
+    "cm": 23.33,
+    "deg": 123.3,
+    "start_cm": 22.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "R: R_outside",
+  "disturbed": [
+   "A"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 8.17,
+    "deg": 40.1,
+    "ok": false
+   },
+   "R": {
+    "cm": 23.33,
+    "deg": 123.3,
+    "ok": false
+   },
+   "M": {
+    "cm": 0.92,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 3379
+ },
+ {
+  "id": 62,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 215,
+    "cm": 0.88,
+    "deg": 1.8,
+    "start_cm": 25.1,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 288,
+    "cm": 1.39,
+    "deg": 5.3,
+    "start_cm": 15.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 96,
+    "cm": 1.33,
+    "deg": 0.0,
+    "start_cm": 9.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 66,
+    "cm": 0.65,
+    "deg": 6.9,
+    "start_cm": 4.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 68,
+    "cm": 0.66,
+    "deg": 2.5,
+    "start_cm": 3.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "M",
+    "success": true,
+    "steps": 55,
+    "cm": 1.18,
+    "deg": 2.0,
+    "start_cm": 3.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.65,
+    "deg": 6.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.75,
+    "deg": 1.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.18,
+    "deg": 2.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2544
+ },
+ {
+  "id": 63,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 48,
+    "cm": 1.48,
+    "deg": 4.8,
+    "start_cm": 7.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 140,
+    "cm": 1.45,
+    "deg": 1.3,
+    "start_cm": 16.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 162,
+    "cm": 1.7,
+    "deg": 3.1,
+    "start_cm": 4.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.47,
+    "deg": 4.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.44,
+    "deg": 2.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.7,
+    "deg": 3.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1228
+ },
+ {
+  "id": 64,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 92,
+    "cm": 0.74,
+    "deg": 1.4,
+    "start_cm": 5.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 97,
+    "cm": 0.82,
+    "deg": 0.0,
+    "start_cm": 16.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 125,
+    "cm": 0.8,
+    "deg": 0.0,
+    "start_cm": 9.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 77,
+    "cm": 0.88,
+    "deg": 0.9,
+    "start_cm": 2.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.78,
+    "deg": 0.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.88,
+    "deg": 0.9,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.79,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1561
+ },
+ {
+  "id": 65,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 174,
+    "cm": 0.81,
+    "deg": 1.7,
+    "start_cm": 8.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 147,
+    "cm": 1.86,
+    "deg": 0.3,
+    "start_cm": 6.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 195,
+    "cm": 1.73,
+    "deg": 3.0,
+    "start_cm": 18.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 24,
+    "cm": 1.83,
+    "deg": 8.0,
+    "start_cm": 2.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.83,
+    "deg": 2.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.83,
+    "deg": 8.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.68,
+    "deg": 3.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1709
+ },
+ {
+  "id": 66,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 217,
+    "cm": 1.01,
+    "deg": 0.0,
+    "start_cm": 16.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 287,
+    "cm": 23.29,
+    "deg": 94.1,
+    "start_cm": 20.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "R: M_outside",
+  "disturbed": [
+   "A"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 13.46,
+    "deg": 144.4,
+    "ok": false
+   },
+   "R": {
+    "cm": 23.29,
+    "deg": 94.1,
+    "ok": false
+   },
+   "M": {
+    "cm": 35.56,
+    "deg": 76.9,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1088
+ },
+ {
+  "id": 67,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 75,
+    "cm": 1.19,
+    "deg": 3.4,
+    "start_cm": 15.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 120,
+    "cm": 1.96,
+    "deg": 1.4,
+    "start_cm": 17.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 187,
+    "cm": 1.62,
+    "deg": 3.9,
+    "start_cm": 24.0,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 72,
+    "cm": 1.58,
+    "deg": 1.8,
+    "start_cm": 8.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 156,
+    "cm": 1.63,
+    "deg": 2.9,
+    "start_cm": 8.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 25,
+    "cm": 1.31,
+    "deg": 0.8,
+    "start_cm": 3.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.14,
+    "deg": 2.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.31,
+    "deg": 0.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.35,
+    "deg": 2.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2390
+ },
+ {
+  "id": 68,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 269,
+    "cm": 0.6,
+    "deg": 2.4,
+    "start_cm": 9.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 155,
+    "cm": 26.5,
+    "deg": 41.1,
+    "start_cm": 13.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "R: R_outside",
+  "disturbed": [],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 0.47,
+    "deg": 3.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 26.5,
+    "deg": 41.1,
+    "ok": false
+   },
+   "M": {
+    "cm": 13.27,
+    "deg": 48.3,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1009
+ },
+ {
+  "id": 69,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 361,
+    "cm": 0.73,
+    "deg": 0.0,
+    "start_cm": 28.8,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 114,
+    "cm": 1.38,
+    "deg": 1.6,
+    "start_cm": 13.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 135,
+    "cm": 1.59,
+    "deg": 0.1,
+    "start_cm": 11.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 55,
+    "cm": 0.62,
+    "deg": 4.3,
+    "start_cm": 3.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.62,
+    "deg": 4.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.38,
+    "deg": 1.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.6,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1836
+ },
+ {
+  "id": 70,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 311,
+    "cm": 0.84,
+    "deg": 0.3,
+    "start_cm": 27.9,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 139,
+    "cm": 1.03,
+    "deg": 0.2,
+    "start_cm": 15.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 96,
+    "cm": 1.08,
+    "deg": 6.0,
+    "start_cm": 7.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 61,
+    "cm": 1.7,
+    "deg": 2.4,
+    "start_cm": 5.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 59,
+    "cm": 0.47,
+    "deg": 1.5,
+    "start_cm": 4.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.47,
+    "deg": 1.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.71,
+    "deg": 2.7,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.08,
+    "deg": 6.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2129
+ },
+ {
+  "id": 71,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 19,
+    "cm": 0.69,
+    "deg": 5.0,
+    "start_cm": 2.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 97,
+    "cm": 0.83,
+    "deg": 1.3,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 234,
+    "cm": 0.63,
+    "deg": 1.3,
+    "start_cm": 18.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 71,
+    "cm": 1.72,
+    "deg": 1.2,
+    "start_cm": 7.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 93,
+    "cm": 0.47,
+    "deg": 2.7,
+    "start_cm": 9.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.47,
+    "deg": 2.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.61,
+    "deg": 0.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.63,
+    "deg": 1.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1977
+ },
+ {
+  "id": 72,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 91,
+    "cm": 0.42,
+    "deg": 7.8,
+    "start_cm": 17.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 88,
+    "cm": 1.29,
+    "deg": 3.0,
+    "start_cm": 12.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 153,
+    "cm": 1.21,
+    "deg": 1.3,
+    "start_cm": 6.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.41,
+    "deg": 8.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.29,
+    "deg": 3.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.21,
+    "deg": 1.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1209
+ },
+ {
+  "id": 73,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 49,
+    "cm": 0.76,
+    "deg": 0.3,
+    "start_cm": 15.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 169,
+    "cm": 1.9,
+    "deg": 5.9,
+    "start_cm": 16.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 114,
+    "cm": 1.19,
+    "deg": 1.2,
+    "start_cm": 7.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 102,
+    "cm": 0.38,
+    "deg": 3.6,
+    "start_cm": 9.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 79,
+    "cm": 1.11,
+    "deg": 0.0,
+    "start_cm": 10.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.29,
+    "deg": 6.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.11,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.88,
+    "deg": 3.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1974
+ },
+ {
+  "id": 74,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 40,
+    "cm": 1.3,
+    "deg": 3.9,
+    "start_cm": 7.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 123,
+    "cm": 0.66,
+    "deg": 3.6,
+    "start_cm": 10.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 224,
+    "cm": 1.43,
+    "deg": 3.7,
+    "start_cm": 26.2,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 47,
+    "cm": 1.13,
+    "deg": 6.9,
+    "start_cm": 3.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 48,
+    "cm": 1.38,
+    "deg": 2.0,
+    "start_cm": 4.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 65,
+    "cm": 1.38,
+    "deg": 2.0,
+    "start_cm": 3.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.13,
+    "deg": 7.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.35,
+    "deg": 3.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.38,
+    "deg": 2.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2302
+ },
+ {
+  "id": 75,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 262,
+    "cm": 1.01,
+    "deg": 1.7,
+    "start_cm": 28.9,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 118,
+    "cm": 1.32,
+    "deg": 2.5,
+    "start_cm": 13.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 69,
+    "cm": 0.79,
+    "deg": 0.0,
+    "start_cm": 9.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 87,
+    "cm": 1.01,
+    "deg": 6.2,
+    "start_cm": 5.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 23,
+    "cm": 1.29,
+    "deg": 8.6,
+    "start_cm": 2.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.24,
+    "deg": 5.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.29,
+    "deg": 8.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.7,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2022
+ },
+ {
+  "id": 76,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 276,
+    "cm": 1.37,
+    "deg": 0.4,
+    "start_cm": 29.3,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 155,
+    "cm": 1.04,
+    "deg": 1.6,
+    "start_cm": 17.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 181,
+    "cm": 1.65,
+    "deg": 5.2,
+    "start_cm": 15.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": false,
+    "steps": 0,
+    "cm": 6.89,
+    "deg": 18.3,
+    "start_cm": 6.9,
+    "route": [
+     "final"
+    ],
+    "mode": "move"
+   }
+  ],
+  "failure": "R: high_contact",
+  "disturbed": [
+   "R"
+  ],
+  "failure_mode": "move",
+  "contact_letter": "M",
+  "final": {
+   "A": {
+    "cm": 1.56,
+    "deg": 3.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 6.89,
+    "deg": 18.3,
+    "ok": false
+   },
+   "M": {
+    "cm": 1.56,
+    "deg": 7.8,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 1494
+ },
+ {
+  "id": 77,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 168,
+    "cm": 1.05,
+    "deg": 0.0,
+    "start_cm": 23.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 110,
+    "cm": 1.34,
+    "deg": 2.6,
+    "start_cm": 17.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 165,
+    "cm": 1.93,
+    "deg": 3.5,
+    "start_cm": 18.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.04,
+    "deg": 0.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.36,
+    "deg": 2.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.93,
+    "deg": 3.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1320
+ },
+ {
+  "id": 78,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 159,
+    "cm": 1.43,
+    "deg": 4.6,
+    "start_cm": 13.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 98,
+    "cm": 0.96,
+    "deg": 2.4,
+    "start_cm": 5.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 23,
+    "cm": 12.14,
+    "deg": 151.6,
+    "start_cm": 11.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "M: M_outside",
+  "disturbed": [],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 1.38,
+    "deg": 3.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.98,
+    "deg": 2.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 12.14,
+    "deg": 151.6,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1158
+ },
+ {
+  "id": 79,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 226,
+    "cm": 1.51,
+    "deg": 2.3,
+    "start_cm": 20.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 172,
+    "cm": 1.19,
+    "deg": 0.0,
+    "start_cm": 19.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 113,
+    "cm": 1.18,
+    "deg": 2.9,
+    "start_cm": 3.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.52,
+    "deg": 2.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.21,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.18,
+    "deg": 2.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1240
+ },
+ {
+  "id": 80,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 209,
+    "cm": 1.07,
+    "deg": 4.8,
+    "start_cm": 21.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 45,
+    "cm": 0.77,
+    "deg": 3.0,
+    "start_cm": 4.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 63,
+    "cm": 1.47,
+    "deg": 1.1,
+    "start_cm": 5.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.79,
+    "deg": 2.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.76,
+    "deg": 3.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.47,
+    "deg": 1.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1195
+ },
+ {
+  "id": 81,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 138,
+    "cm": 1.35,
+    "deg": 0.3,
+    "start_cm": 18.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 276,
+    "cm": 1.04,
+    "deg": 2.6,
+    "start_cm": 15.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 216,
+    "cm": 1.35,
+    "deg": 0.4,
+    "start_cm": 28.4,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 303,
+    "cm": 0.77,
+    "deg": 0.1,
+    "start_cm": 27.7,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 71,
+    "cm": 0.88,
+    "deg": 0.2,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 111,
+    "cm": 1.53,
+    "deg": 6.5,
+    "start_cm": 10.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 69,
+    "cm": 0.91,
+    "deg": 0.7,
+    "start_cm": 9.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.76,
+    "deg": 0.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.91,
+    "deg": 0.7,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.52,
+    "deg": 6.7,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2941
+ },
+ {
+  "id": 82,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 150,
+    "cm": 1.5,
+    "deg": 6.2,
+    "start_cm": 12.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 124,
+    "cm": 1.06,
+    "deg": 0.0,
+    "start_cm": 14.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 226,
+    "cm": 1.36,
+    "deg": 2.1,
+    "start_cm": 21.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 17,
+    "cm": 0.97,
+    "deg": 0.8,
+    "start_cm": 1.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 94,
+    "cm": 0.85,
+    "deg": 4.1,
+    "start_cm": 8.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 101,
+    "cm": 0.88,
+    "deg": 0.2,
+    "start_cm": 3.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 74,
+    "cm": 0.89,
+    "deg": 0.5,
+    "start_cm": 3.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.96,
+    "deg": 4.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.89,
+    "deg": 0.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.86,
+    "deg": 0.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2686
+ },
+ {
+  "id": 83,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 304,
+    "cm": 0.97,
+    "deg": 1.0,
+    "start_cm": 27.2,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 102,
+    "cm": 1.38,
+    "deg": 8.2,
+    "start_cm": 15.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 300,
+    "cm": 0.83,
+    "deg": 3.7,
+    "start_cm": 26.3,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 203,
+    "cm": 0.88,
+    "deg": 0.1,
+    "start_cm": 19.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 158,
+    "cm": 1.37,
+    "deg": 4.6,
+    "start_cm": 11.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 80,
+    "cm": 1.56,
+    "deg": 0.0,
+    "start_cm": 10.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.88,
+    "deg": 0.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.37,
+    "deg": 4.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.56,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2903
+ },
+ {
+  "id": 84,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 150,
+    "cm": 1.05,
+    "deg": 0.1,
+    "start_cm": 19.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 81,
+    "cm": 1.51,
+    "deg": 3.0,
+    "start_cm": 8.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 72,
+    "cm": 1.41,
+    "deg": 2.9,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.04,
+    "deg": 0.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.45,
+    "deg": 1.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.41,
+    "deg": 2.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1180
+ },
+ {
+  "id": 85,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 82,
+    "cm": 0.86,
+    "deg": 1.4,
+    "start_cm": 6.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 76,
+    "cm": 0.8,
+    "deg": 0.1,
+    "start_cm": 0.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 84,
+    "cm": 1.14,
+    "deg": 2.8,
+    "start_cm": 3.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.73,
+    "deg": 2.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.69,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.14,
+    "deg": 2.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1120
+ },
+ {
+  "id": 86,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 195,
+    "cm": 1.99,
+    "deg": 4.2,
+    "start_cm": 4.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 131,
+    "cm": 1.84,
+    "deg": 2.6,
+    "start_cm": 18.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 153,
+    "cm": 0.96,
+    "deg": 0.5,
+    "start_cm": 13.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.99,
+    "deg": 4.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.22,
+    "deg": 7.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.96,
+    "deg": 0.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1210
+ },
+ {
+  "id": 87,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 279,
+    "cm": 1.19,
+    "deg": 4.3,
+    "start_cm": 8.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 171,
+    "cm": 1.61,
+    "deg": 0.1,
+    "start_cm": 14.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 181,
+    "cm": 1.86,
+    "deg": 3.1,
+    "start_cm": 9.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.14,
+    "deg": 3.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.67,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.86,
+    "deg": 3.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1507
+ },
+ {
+  "id": 88,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 292,
+    "cm": 0.92,
+    "deg": 2.5,
+    "start_cm": 22.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 153,
+    "cm": 1.3,
+    "deg": 0.1,
+    "start_cm": 12.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 59,
+    "cm": 1.62,
+    "deg": 1.3,
+    "start_cm": 5.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.58,
+    "deg": 4.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.3,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.62,
+    "deg": 1.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1382
+ },
+ {
+  "id": 89,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 146,
+    "cm": 1.02,
+    "deg": 2.0,
+    "start_cm": 14.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 284,
+    "cm": 1.8,
+    "deg": 7.4,
+    "start_cm": 22.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 106,
+    "cm": 1.13,
+    "deg": 2.7,
+    "start_cm": 3.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 36,
+    "cm": 1.1,
+    "deg": 9.0,
+    "start_cm": 4.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 44,
+    "cm": 1.53,
+    "deg": 3.8,
+    "start_cm": 2.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 14,
+    "cm": 0.92,
+    "deg": 7.6,
+    "start_cm": 1.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.92,
+    "deg": 7.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.53,
+    "deg": 3.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.42,
+    "deg": 3.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2386
+ },
+ {
+  "id": 90,
+  "phases": {
+   "A": {
+    "success": false,
+    "steps": 9,
+    "cm": 13.71,
+    "deg": 27.6,
+    "start_cm": 13.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "A: high_contact",
+  "disturbed": [],
+  "failure_mode": "policy",
+  "contact_letter": "A",
+  "final": {
+   "A": {
+    "cm": 13.71,
+    "deg": 27.6,
+    "ok": false
+   },
+   "R": {
+    "cm": 13.58,
+    "deg": 73.1,
+    "ok": false
+   },
+   "M": {
+    "cm": 23.38,
+    "deg": 109.9,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 153
+ },
+ {
+  "id": 91,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 85,
+    "cm": 0.84,
+    "deg": 3.0,
+    "start_cm": 3.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 178,
+    "cm": 1.43,
+    "deg": 0.3,
+    "start_cm": 9.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 134,
+    "cm": 0.83,
+    "deg": 2.5,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 123,
+    "cm": 0.51,
+    "deg": 1.1,
+    "start_cm": 11.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.51,
+    "deg": 1.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.43,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.71,
+    "deg": 3.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1543
+ },
+ {
+  "id": 92,
+  "phases": {
+   "A": {
+    "success": false,
+    "steps": 1000,
+    "cm": 11.35,
+    "deg": 176.5,
+    "start_cm": 11.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 119,
+    "cm": 1.47,
+    "deg": 0.0,
+    "start_cm": 17.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 91,
+    "cm": 1.1,
+    "deg": 5.3,
+    "start_cm": 8.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": false,
+    "steps": 1000,
+    "cm": 11.35,
+    "deg": 176.5,
+    "start_cm": 11.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 84,
+    "cm": 0.95,
+    "deg": 4.0,
+    "start_cm": 4.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": false,
+    "steps": 1000,
+    "cm": 11.35,
+    "deg": 176.5,
+    "start_cm": 11.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 107,
+    "cm": 0.76,
+    "deg": 1.1,
+    "start_cm": 2.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "A",
+    "success": false,
+    "steps": 1000,
+    "cm": 11.35,
+    "deg": 176.5,
+    "start_cm": 11.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "A",
+    "success": false,
+    "steps": 1000,
+    "cm": 11.35,
+    "deg": 176.5,
+    "start_cm": 11.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 11.35,
+    "deg": 176.5,
+    "ok": false
+   },
+   "R": {
+    "cm": 1.85,
+    "deg": 5.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.73,
+    "deg": 0.8,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 8032
+ },
+ {
+  "id": 93,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 136,
+    "cm": 0.92,
+    "deg": 6.1,
+    "start_cm": 13.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 115,
+    "cm": 1.07,
+    "deg": 5.1,
+    "start_cm": 14.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 121,
+    "cm": 0.81,
+    "deg": 2.9,
+    "start_cm": 8.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.79,
+    "deg": 7.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.12,
+    "deg": 1.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.81,
+    "deg": 2.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1249
+ },
+ {
+  "id": 94,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 96,
+    "cm": 1.85,
+    "deg": 5.7,
+    "start_cm": 12.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 159,
+    "cm": 1.6,
+    "deg": 2.8,
+    "start_cm": 18.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 302,
+    "cm": 1.13,
+    "deg": 0.3,
+    "start_cm": 17.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 90,
+    "cm": 1.17,
+    "deg": 0.9,
+    "start_cm": 5.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 65,
+    "cm": 1.77,
+    "deg": 7.4,
+    "start_cm": 7.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 61,
+    "cm": 1.99,
+    "deg": 8.7,
+    "start_cm": 5.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.99,
+    "deg": 8.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.76,
+    "deg": 7.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.13,
+    "deg": 0.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2380
+ },
+ {
+  "id": 95,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 94,
+    "cm": 0.74,
+    "deg": 0.0,
+    "start_cm": 13.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 92,
+    "cm": 1.19,
+    "deg": 0.2,
+    "start_cm": 13.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 130,
+    "cm": 1.35,
+    "deg": 4.5,
+    "start_cm": 11.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 21,
+    "cm": 1.38,
+    "deg": 8.5,
+    "start_cm": 4.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.7,
+    "deg": 0.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.38,
+    "deg": 8.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.2,
+    "deg": 6.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1361
+ },
+ {
+  "id": 96,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 101,
+    "cm": 0.74,
+    "deg": 2.5,
+    "start_cm": 9.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 111,
+    "cm": 1.46,
+    "deg": 3.6,
+    "start_cm": 4.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 131,
+    "cm": 0.93,
+    "deg": 3.3,
+    "start_cm": 11.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 19,
+    "cm": 1.54,
+    "deg": 6.7,
+    "start_cm": 3.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.54,
+    "deg": 6.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.44,
+    "deg": 4.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.14,
+    "deg": 3.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1532
+ },
+ {
+  "id": 97,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 122,
+    "cm": 1.35,
+    "deg": 7.2,
+    "start_cm": 4.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 89,
+    "cm": 0.77,
+    "deg": 0.0,
+    "start_cm": 14.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 124,
+    "cm": 1.57,
+    "deg": 5.3,
+    "start_cm": 25.3,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 19,
+    "cm": 0.68,
+    "deg": 0.8,
+    "start_cm": 1.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.15,
+    "deg": 6.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.68,
+    "deg": 0.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.55,
+    "deg": 7.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1524
+ },
+ {
+  "id": 98,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 375,
+    "cm": 1.24,
+    "deg": 5.2,
+    "start_cm": 26.7,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 264,
+    "cm": 1.05,
+    "deg": 3.0,
+    "start_cm": 14.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 85,
+    "cm": 1.85,
+    "deg": 1.6,
+    "start_cm": 5.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 102,
+    "cm": 0.43,
+    "deg": 0.4,
+    "start_cm": 7.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.43,
+    "deg": 0.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.59,
+    "deg": 7.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.89,
+    "deg": 3.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1995
+ },
+ {
+  "id": 99,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 105,
+    "cm": 0.54,
+    "deg": 4.6,
+    "start_cm": 9.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 147,
+    "cm": 1.62,
+    "deg": 1.4,
+    "start_cm": 19.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 222,
+    "cm": 1.05,
+    "deg": 3.1,
+    "start_cm": 6.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 81,
+    "cm": 1.41,
+    "deg": 0.9,
+    "start_cm": 2.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.41,
+    "deg": 0.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.73,
+    "deg": 3.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.28,
+    "deg": 3.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1725
+ },
+ {
+  "id": 100,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 282,
+    "cm": 0.83,
+    "deg": 0.2,
+    "start_cm": 13.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 49,
+    "cm": 1.5,
+    "deg": 1.4,
+    "start_cm": 10.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 74,
+    "cm": 0.91,
+    "deg": 5.0,
+    "start_cm": 6.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.5,
+    "deg": 1.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.5,
+    "deg": 1.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.91,
+    "deg": 5.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1283
+ },
+ {
+  "id": 101,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 93,
+    "cm": 0.7,
+    "deg": 2.7,
+    "start_cm": 4.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 140,
+    "cm": 1.78,
+    "deg": 3.1,
+    "start_cm": 15.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 233,
+    "cm": 0.99,
+    "deg": 0.4,
+    "start_cm": 23.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 114,
+    "cm": 1.1,
+    "deg": 5.6,
+    "start_cm": 10.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 116,
+    "cm": 1.26,
+    "deg": 4.2,
+    "start_cm": 11.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.48,
+    "deg": 4.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.11,
+    "deg": 5.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.26,
+    "deg": 4.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2159
+ },
+ {
+  "id": 102,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 98,
+    "cm": 1.06,
+    "deg": 1.4,
+    "start_cm": 6.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 256,
+    "cm": 0.91,
+    "deg": 0.0,
+    "start_cm": 10.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 322,
+    "cm": 0.74,
+    "deg": 2.7,
+    "start_cm": 17.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 76,
+    "cm": 1.42,
+    "deg": 0.0,
+    "start_cm": 9.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 65,
+    "cm": 1.94,
+    "deg": 4.7,
+    "start_cm": 6.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 59,
+    "cm": 0.83,
+    "deg": 3.0,
+    "start_cm": 4.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.83,
+    "deg": 3.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.93,
+    "deg": 4.9,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.66,
+    "deg": 2.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2485
+ },
+ {
+  "id": 103,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 152,
+    "cm": 1.47,
+    "deg": 0.0,
+    "start_cm": 13.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 139,
+    "cm": 1.91,
+    "deg": 5.4,
+    "start_cm": 5.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 109,
+    "cm": 1.34,
+    "deg": 1.7,
+    "start_cm": 15.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.41,
+    "deg": 1.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.91,
+    "deg": 5.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.34,
+    "deg": 1.7,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1278
+ },
+ {
+  "id": 104,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 152,
+    "cm": 1.06,
+    "deg": 2.3,
+    "start_cm": 13.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 113,
+    "cm": 1.81,
+    "deg": 0.4,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 152,
+    "cm": 1.65,
+    "deg": 3.5,
+    "start_cm": 5.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 22,
+    "cm": 1.19,
+    "deg": 0.6,
+    "start_cm": 3.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.02,
+    "deg": 2.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.19,
+    "deg": 0.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.45,
+    "deg": 5.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1609
+ },
+ {
+  "id": 105,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 109,
+    "cm": 1.48,
+    "deg": 6.2,
+    "start_cm": 13.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 49,
+    "cm": 1.52,
+    "deg": 6.1,
+    "start_cm": 2.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 79,
+    "cm": 1.73,
+    "deg": 3.0,
+    "start_cm": 7.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.47,
+    "deg": 5.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.46,
+    "deg": 8.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.73,
+    "deg": 3.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 966
+ },
+ {
+  "id": 106,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 180,
+    "cm": 0.55,
+    "deg": 0.8,
+    "start_cm": 7.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 26,
+    "cm": 27.18,
+    "deg": 179.9,
+    "start_cm": 19.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "R: R_outside",
+  "disturbed": [],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 0.54,
+    "deg": 0.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 27.18,
+    "deg": 179.9,
+    "ok": false
+   },
+   "M": {
+    "cm": 11.44,
+    "deg": 0.9,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 791
+ },
+ {
+  "id": 107,
+  "phases": {
+   "A": {
+    "success": false,
+    "steps": 1100,
+    "cm": 26.42,
+    "deg": 115.0,
+    "start_cm": 23.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 93,
+    "cm": 1.51,
+    "deg": 3.5,
+    "start_cm": 13.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 359,
+    "cm": 0.95,
+    "deg": 3.1,
+    "start_cm": 6.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 314,
+    "cm": 1.06,
+    "deg": 8.2,
+    "start_cm": 27.2,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 155,
+    "cm": 0.66,
+    "deg": 0.1,
+    "start_cm": 13.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 106,
+    "cm": 0.63,
+    "deg": 4.6,
+    "start_cm": 2.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 89,
+    "cm": 1.97,
+    "deg": 9.6,
+    "start_cm": 6.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "A",
+    "success": true,
+    "steps": 16,
+    "cm": 0.33,
+    "deg": 1.4,
+    "start_cm": 0.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "M",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.33,
+    "deg": 1.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 2.05,
+    "deg": 11.8,
+    "ok": false
+   },
+   "M": {
+    "cm": 0.64,
+    "deg": 4.0,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 4574
+ },
+ {
+  "id": 108,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 125,
+    "cm": 1.33,
+    "deg": 0.1,
+    "start_cm": 14.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 143,
+    "cm": 1.2,
+    "deg": 0.2,
+    "start_cm": 15.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 207,
+    "cm": 1.24,
+    "deg": 3.9,
+    "start_cm": 29.1,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": false,
+    "steps": 0,
+    "cm": 5.43,
+    "deg": 15.4,
+    "start_cm": 5.4,
+    "route": [
+     "final"
+    ],
+    "mode": "move"
+   }
+  ],
+  "failure": "A: high_contact",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "failure_mode": "move",
+  "contact_letter": "M",
+  "final": {
+   "A": {
+    "cm": 5.43,
+    "deg": 15.4,
+    "ok": false
+   },
+   "R": {
+    "cm": 2.29,
+    "deg": 12.1,
+    "ok": false
+   },
+   "M": {
+    "cm": 1.19,
+    "deg": 5.9,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 1357
+ },
+ {
+  "id": 109,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 270,
+    "cm": 1.16,
+    "deg": 0.1,
+    "start_cm": 27.5,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 103,
+    "cm": 0.99,
+    "deg": 3.2,
+    "start_cm": 8.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 42,
+    "cm": 13.22,
+    "deg": 7.6,
+    "start_cm": 11.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "M: high_contact",
+  "disturbed": [
+   "A"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "M",
+  "final": {
+   "A": {
+    "cm": 6.46,
+    "deg": 13.6,
+    "ok": false
+   },
+   "R": {
+    "cm": 1.08,
+    "deg": 1.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 13.22,
+    "deg": 7.6,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1292
+ },
+ {
+  "id": 110,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 136,
+    "cm": 1.41,
+    "deg": 1.3,
+    "start_cm": 4.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 150,
+    "cm": 0.62,
+    "deg": 0.0,
+    "start_cm": 13.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 225,
+    "cm": 1.82,
+    "deg": 0.3,
+    "start_cm": 12.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 57,
+    "cm": 1.21,
+    "deg": 2.6,
+    "start_cm": 5.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 105,
+    "cm": 0.41,
+    "deg": 0.9,
+    "start_cm": 7.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.41,
+    "deg": 0.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.19,
+    "deg": 3.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.85,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2135
+ },
+ {
+  "id": 111,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 99,
+    "cm": 0.96,
+    "deg": 2.0,
+    "start_cm": 5.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 155,
+    "cm": 0.69,
+    "deg": 0.5,
+    "start_cm": 9.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 28,
+    "cm": 15.77,
+    "deg": 7.7,
+    "start_cm": 11.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "M: M_outside",
+  "disturbed": [
+   "A"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 12.08,
+    "deg": 12.0,
+    "ok": false
+   },
+   "R": {
+    "cm": 0.67,
+    "deg": 0.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 15.77,
+    "deg": 7.7,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 1015
+ },
+ {
+  "id": 112,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 237,
+    "cm": 1.46,
+    "deg": 1.1,
+    "start_cm": 10.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 134,
+    "cm": 1.01,
+    "deg": 0.2,
+    "start_cm": 9.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 392,
+    "cm": 2.0,
+    "deg": 1.4,
+    "start_cm": 14.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.46,
+    "deg": 1.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.92,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 2.0,
+    "deg": 1.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1641
+ },
+ {
+  "id": 113,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 102,
+    "cm": 1.61,
+    "deg": 3.8,
+    "start_cm": 16.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 142,
+    "cm": 1.9,
+    "deg": 2.0,
+    "start_cm": 17.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 237,
+    "cm": 1.49,
+    "deg": 4.8,
+    "start_cm": 27.2,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 19,
+    "cm": 1.49,
+    "deg": 5.9,
+    "start_cm": 3.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 51,
+    "cm": 1.03,
+    "deg": 0.0,
+    "start_cm": 4.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 121,
+    "cm": 1.28,
+    "deg": 3.0,
+    "start_cm": 4.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 16,
+    "cm": 0.88,
+    "deg": 3.2,
+    "start_cm": 1.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.44,
+    "deg": 4.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.88,
+    "deg": 3.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.55,
+    "deg": 3.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2736
+ },
+ {
+  "id": 114,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 80,
+    "cm": 0.44,
+    "deg": 3.3,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 123,
+    "cm": 1.7,
+    "deg": 0.6,
+    "start_cm": 19.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 104,
+    "cm": 1.32,
+    "deg": 3.8,
+    "start_cm": 9.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.47,
+    "deg": 4.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.7,
+    "deg": 0.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.32,
+    "deg": 3.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1185
+ },
+ {
+  "id": 115,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 107,
+    "cm": 1.15,
+    "deg": 0.0,
+    "start_cm": 14.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 84,
+    "cm": 1.32,
+    "deg": 0.5,
+    "start_cm": 10.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 257,
+    "cm": 0.49,
+    "deg": 0.7,
+    "start_cm": 26.2,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 17,
+    "cm": 1.29,
+    "deg": 0.5,
+    "start_cm": 0.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 157,
+    "cm": 0.81,
+    "deg": 0.4,
+    "start_cm": 7.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 120,
+    "cm": 0.8,
+    "deg": 5.3,
+    "start_cm": 11.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.8,
+    "deg": 5.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.65,
+    "deg": 0.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.46,
+    "deg": 0.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2354
+ },
+ {
+  "id": 116,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 157,
+    "cm": 1.12,
+    "deg": 2.7,
+    "start_cm": 12.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 130,
+    "cm": 1.27,
+    "deg": 3.2,
+    "start_cm": 15.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 239,
+    "cm": 0.9,
+    "deg": 3.4,
+    "start_cm": 12.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 50,
+    "cm": 1.17,
+    "deg": 0.1,
+    "start_cm": 3.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 101,
+    "cm": 1.25,
+    "deg": 6.4,
+    "start_cm": 4.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.25,
+    "deg": 6.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.15,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.91,
+    "deg": 2.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2141
+ },
+ {
+  "id": 117,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 62,
+    "cm": 1.69,
+    "deg": 5.2,
+    "start_cm": 3.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 174,
+    "cm": 1.27,
+    "deg": 1.5,
+    "start_cm": 14.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 122,
+    "cm": 1.1,
+    "deg": 1.5,
+    "start_cm": 13.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.66,
+    "deg": 5.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.26,
+    "deg": 1.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.1,
+    "deg": 1.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1235
+ },
+ {
+  "id": 118,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 253,
+    "cm": 1.03,
+    "deg": 1.6,
+    "start_cm": 16.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 671,
+    "cm": 4.14,
+    "deg": 13.7,
+    "start_cm": 19.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 106,
+    "cm": 1.51,
+    "deg": 2.1,
+    "start_cm": 9.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 49,
+    "cm": 1.91,
+    "deg": 8.5,
+    "start_cm": 3.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 57,
+    "cm": 1.4,
+    "deg": 1.2,
+    "start_cm": 12.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 18,
+    "cm": 0.19,
+    "deg": 3.3,
+    "start_cm": 0.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.92,
+    "deg": 9.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.4,
+    "deg": 1.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.19,
+    "deg": 3.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2911
+ },
+ {
+  "id": 119,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 81,
+    "cm": 1.19,
+    "deg": 5.8,
+    "start_cm": 3.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 70,
+    "cm": 1.47,
+    "deg": 0.6,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 166,
+    "cm": 1.32,
+    "deg": 0.3,
+    "start_cm": 16.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 22,
+    "cm": 1.51,
+    "deg": 5.1,
+    "start_cm": 1.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.19,
+    "deg": 5.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.51,
+    "deg": 5.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.32,
+    "deg": 0.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1509
+ },
+ {
+  "id": 120,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 77,
+    "cm": 1.62,
+    "deg": 8.1,
+    "start_cm": 8.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 82,
+    "cm": 1.27,
+    "deg": 0.0,
+    "start_cm": 10.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 55,
+    "cm": 1.62,
+    "deg": 0.1,
+    "start_cm": 9.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 80,
+    "cm": 1.16,
+    "deg": 5.8,
+    "start_cm": 1.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.16,
+    "deg": 5.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.23,
+    "deg": 0.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.64,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1464
+ },
+ {
+  "id": 121,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 124,
+    "cm": 0.93,
+    "deg": 1.4,
+    "start_cm": 6.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 171,
+    "cm": 1.99,
+    "deg": 4.9,
+    "start_cm": 12.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 50,
+    "cm": 1.26,
+    "deg": 0.3,
+    "start_cm": 5.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.54,
+    "deg": 0.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.99,
+    "deg": 4.9,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.26,
+    "deg": 0.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1223
+ },
+ {
+  "id": 122,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 246,
+    "cm": 1.16,
+    "deg": 1.6,
+    "start_cm": 21.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 154,
+    "cm": 1.2,
+    "deg": 0.4,
+    "start_cm": 14.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 215,
+    "cm": 1.98,
+    "deg": 7.8,
+    "start_cm": 25.7,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": false,
+    "steps": 0,
+    "cm": 5.9,
+    "deg": 4.4,
+    "start_cm": 5.9,
+    "route": [
+     "final"
+    ],
+    "mode": "move"
+   }
+  ],
+  "failure": "R: high_contact",
+  "disturbed": [
+   "R"
+  ],
+  "failure_mode": "move",
+  "contact_letter": "R",
+  "final": {
+   "A": {
+    "cm": 1.04,
+    "deg": 1.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 5.9,
+    "deg": 4.4,
+    "ok": false
+   },
+   "M": {
+    "cm": 1.98,
+    "deg": 7.8,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 1497
+ },
+ {
+  "id": 123,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 81,
+    "cm": 1.35,
+    "deg": 2.9,
+    "start_cm": 0.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 192,
+    "cm": 0.92,
+    "deg": 0.0,
+    "start_cm": 16.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 59,
+    "cm": 0.68,
+    "deg": 0.2,
+    "start_cm": 5.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.41,
+    "deg": 0.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.87,
+    "deg": 0.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.68,
+    "deg": 0.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1210
+ },
+ {
+  "id": 124,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 99,
+    "cm": 0.74,
+    "deg": 5.2,
+    "start_cm": 7.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 130,
+    "cm": 1.03,
+    "deg": 2.8,
+    "start_cm": 16.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 373,
+    "cm": 0.97,
+    "deg": 0.5,
+    "start_cm": 25.4,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 57,
+    "cm": 0.82,
+    "deg": 9.6,
+    "start_cm": 1.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 90,
+    "cm": 1.12,
+    "deg": 1.3,
+    "start_cm": 4.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 12,
+    "cm": 1.23,
+    "deg": 1.7,
+    "start_cm": 0.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 54,
+    "cm": 1.29,
+    "deg": 3.1,
+    "start_cm": 2.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 52,
+    "cm": 0.91,
+    "deg": 0.3,
+    "start_cm": 3.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "A",
+    "success": true,
+    "steps": 93,
+    "cm": 1.51,
+    "deg": 1.9,
+    "start_cm": 6.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.51,
+    "deg": 1.9,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.86,
+    "deg": 0.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.44,
+    "deg": 1.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 3595
+ },
+ {
+  "id": 125,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 111,
+    "cm": 1.4,
+    "deg": 2.3,
+    "start_cm": 12.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 213,
+    "cm": 1.39,
+    "deg": 0.4,
+    "start_cm": 18.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 136,
+    "cm": 0.73,
+    "deg": 1.7,
+    "start_cm": 21.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 84,
+    "cm": 1.11,
+    "deg": 5.0,
+    "start_cm": 4.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 152,
+    "cm": 1.18,
+    "deg": 3.6,
+    "start_cm": 2.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 34,
+    "cm": 0.88,
+    "deg": 2.5,
+    "start_cm": 2.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.0,
+    "deg": 7.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.18,
+    "deg": 3.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.88,
+    "deg": 2.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2486
+ },
+ {
+  "id": 126,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 221,
+    "cm": 1.19,
+    "deg": 1.0,
+    "start_cm": 10.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 162,
+    "cm": 0.87,
+    "deg": 2.5,
+    "start_cm": 14.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 134,
+    "cm": 1.93,
+    "deg": 1.3,
+    "start_cm": 5.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 53,
+    "cm": 1.7,
+    "deg": 2.0,
+    "start_cm": 4.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 68,
+    "cm": 1.12,
+    "deg": 7.3,
+    "start_cm": 7.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": true,
+    "steps": 100,
+    "cm": 0.35,
+    "deg": 3.5,
+    "start_cm": 11.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R",
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.06,
+    "deg": 8.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.35,
+    "deg": 3.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.96,
+    "deg": 2.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2493
+ },
+ {
+  "id": 127,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 195,
+    "cm": 1.44,
+    "deg": 3.8,
+    "start_cm": 23.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 64,
+    "cm": 0.45,
+    "deg": 1.2,
+    "start_cm": 5.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": false,
+    "steps": 1600,
+    "cm": 27.64,
+    "deg": 37.6,
+    "start_cm": 24.7,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "M",
+    "success": true,
+    "steps": 223,
+    "cm": 0.92,
+    "deg": 0.2,
+    "start_cm": 27.6,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 51,
+    "cm": 0.5,
+    "deg": 3.3,
+    "start_cm": 3.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 16,
+    "cm": 0.75,
+    "deg": 9.1,
+    "start_cm": 0.6,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.37,
+    "deg": 4.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.75,
+    "deg": 9.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.92,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 3906
+ },
+ {
+  "id": 128,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 206,
+    "cm": 0.98,
+    "deg": 0.1,
+    "start_cm": 22.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 187,
+    "cm": 1.1,
+    "deg": 2.7,
+    "start_cm": 10.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 241,
+    "cm": 1.64,
+    "deg": 4.5,
+    "start_cm": 29.2,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 105,
+    "cm": 0.56,
+    "deg": 0.2,
+    "start_cm": 11.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 16,
+    "cm": 1.59,
+    "deg": 0.9,
+    "start_cm": 2.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.4,
+    "deg": 2.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.59,
+    "deg": 0.9,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.64,
+    "deg": 4.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2074
+ },
+ {
+  "id": 129,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 112,
+    "cm": 1.27,
+    "deg": 0.7,
+    "start_cm": 13.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 182,
+    "cm": 0.81,
+    "deg": 0.0,
+    "start_cm": 20.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 183,
+    "cm": 1.83,
+    "deg": 5.7,
+    "start_cm": 19.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 69,
+    "cm": 1.09,
+    "deg": 6.0,
+    "start_cm": 3.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 73,
+    "cm": 1.92,
+    "deg": 2.2,
+    "start_cm": 8.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 117,
+    "cm": 0.93,
+    "deg": 2.9,
+    "start_cm": 7.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": false,
+    "steps": 0,
+    "cm": 2.45,
+    "deg": 4.5,
+    "start_cm": 2.5,
+    "route": [
+     "final"
+    ],
+    "mode": "move"
+   }
+  ],
+  "failure": "R: high_contact",
+  "disturbed": [
+   "A",
+   "R",
+   "M",
+   "R"
+  ],
+  "failure_mode": "move",
+  "contact_letter": "M",
+  "final": {
+   "A": {
+    "cm": 1.05,
+    "deg": 7.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 2.45,
+    "deg": 4.5,
+    "ok": false
+   },
+   "M": {
+    "cm": 1.22,
+    "deg": 2.4,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 2497
+ },
+ {
+  "id": 130,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 189,
+    "cm": 1.31,
+    "deg": 3.3,
+    "start_cm": 13.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 86,
+    "cm": 0.69,
+    "deg": 0.5,
+    "start_cm": 7.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 106,
+    "cm": 1.38,
+    "deg": 0.2,
+    "start_cm": 4.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 67,
+    "cm": 0.64,
+    "deg": 0.0,
+    "start_cm": 2.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.3,
+    "deg": 3.1,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.64,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.37,
+    "deg": 0.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1618
+ },
+ {
+  "id": 131,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 176,
+    "cm": 1.36,
+    "deg": 4.8,
+    "start_cm": 14.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 101,
+    "cm": 1.37,
+    "deg": 0.0,
+    "start_cm": 14.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 94,
+    "cm": 0.87,
+    "deg": 3.1,
+    "start_cm": 12.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.35,
+    "deg": 3.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.33,
+    "deg": 0.0,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.87,
+    "deg": 3.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1249
+ },
+ {
+  "id": 132,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 151,
+    "cm": 1.33,
+    "deg": 0.1,
+    "start_cm": 7.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 168,
+    "cm": 1.24,
+    "deg": 2.5,
+    "start_cm": 14.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 387,
+    "cm": 0.47,
+    "deg": 5.0,
+    "start_cm": 24.1,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 85,
+    "cm": 1.42,
+    "deg": 2.5,
+    "start_cm": 13.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.38,
+    "deg": 9.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.42,
+    "deg": 2.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.33,
+    "deg": 4.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1669
+ },
+ {
+  "id": 133,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 85,
+    "cm": 0.73,
+    "deg": 0.6,
+    "start_cm": 9.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 689,
+    "cm": 4.02,
+    "deg": 12.8,
+    "start_cm": 13.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 95,
+    "cm": 0.72,
+    "deg": 2.4,
+    "start_cm": 10.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 37,
+    "cm": 0.84,
+    "deg": 2.6,
+    "start_cm": 4.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.57,
+    "deg": 0.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.84,
+    "deg": 2.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.6,
+    "deg": 1.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1932
+ },
+ {
+  "id": 134,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 91,
+    "cm": 1.64,
+    "deg": 2.3,
+    "start_cm": 2.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 781,
+    "cm": 8.3,
+    "deg": 0.2,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 98,
+    "cm": 1.21,
+    "deg": 3.8,
+    "start_cm": 14.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 201,
+    "cm": 1.28,
+    "deg": 0.5,
+    "start_cm": 8.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "M",
+    "success": true,
+    "steps": 100,
+    "cm": 1.35,
+    "deg": 1.3,
+    "start_cm": 6.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "M"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.66,
+    "deg": 0.6,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.36,
+    "deg": 2.9,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.35,
+    "deg": 1.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2589
+ },
+ {
+  "id": 135,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 212,
+    "cm": 0.66,
+    "deg": 0.5,
+    "start_cm": 19.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 160,
+    "cm": 1.25,
+    "deg": 0.0,
+    "start_cm": 18.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 94,
+    "cm": 0.74,
+    "deg": 0.1,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.58,
+    "deg": 0.5,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.13,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.74,
+    "deg": 0.1,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1343
+ },
+ {
+  "id": 136,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 167,
+    "cm": 1.58,
+    "deg": 0.0,
+    "start_cm": 10.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 68,
+    "cm": 1.17,
+    "deg": 0.1,
+    "start_cm": 11.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 89,
+    "cm": 1.84,
+    "deg": 6.7,
+    "start_cm": 10.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.58,
+    "deg": 0.0,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.04,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.84,
+    "deg": 6.7,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1056
+ },
+ {
+  "id": 137,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 53,
+    "cm": 1.54,
+    "deg": 5.8,
+    "start_cm": 8.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 111,
+    "cm": 1.56,
+    "deg": 0.1,
+    "start_cm": 15.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 58,
+    "cm": 1.3,
+    "deg": 0.0,
+    "start_cm": 7.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.54,
+    "deg": 5.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.55,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.3,
+    "deg": 0.0,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1100
+ },
+ {
+  "id": 138,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 264,
+    "cm": 1.45,
+    "deg": 4.9,
+    "start_cm": 22.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 152,
+    "cm": 1.21,
+    "deg": 1.2,
+    "start_cm": 14.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 152,
+    "cm": 1.33,
+    "deg": 1.0,
+    "start_cm": 11.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 67,
+    "cm": 1.15,
+    "deg": 3.3,
+    "start_cm": 9.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 90,
+    "cm": 1.17,
+    "deg": 0.0,
+    "start_cm": 10.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 56,
+    "cm": 1.89,
+    "deg": 1.7,
+    "start_cm": 2.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.89,
+    "deg": 1.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.94,
+    "deg": 0.1,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.31,
+    "deg": 1.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2537
+ },
+ {
+  "id": 139,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 103,
+    "cm": 1.28,
+    "deg": 3.8,
+    "start_cm": 16.3,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 1100,
+    "cm": 15.56,
+    "deg": 179.7,
+    "start_cm": 13.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 85,
+    "cm": 1.54,
+    "deg": 3.2,
+    "start_cm": 6.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": false,
+    "steps": 1100,
+    "cm": 15.81,
+    "deg": 179.9,
+    "start_cm": 15.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": true,
+    "steps": 316,
+    "cm": 0.72,
+    "deg": 0.3,
+    "start_cm": 15.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "M",
+    "success": true,
+    "steps": 21,
+    "cm": 1.51,
+    "deg": 3.8,
+    "start_cm": 2.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.25,
+    "deg": 3.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.37,
+    "deg": 0.6,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.51,
+    "deg": 3.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 4479
+ },
+ {
+  "id": 140,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 64,
+    "cm": 1.79,
+    "deg": 6.1,
+    "start_cm": 8.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 661,
+    "cm": 21.76,
+    "deg": 117.6,
+    "start_cm": 17.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 208,
+    "cm": 1.17,
+    "deg": 3.1,
+    "start_cm": 11.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": false,
+    "steps": 1100,
+    "cm": 27.33,
+    "deg": 158.4,
+    "start_cm": 18.6,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": false,
+    "steps": 1100,
+    "cm": 22.46,
+    "deg": 82.4,
+    "start_cm": 22.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": false,
+    "steps": 1600,
+    "cm": 29.38,
+    "deg": 179.7,
+    "start_cm": 32.1,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": false,
+    "steps": 1100,
+    "cm": 22.46,
+    "deg": 82.4,
+    "start_cm": 22.5,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "A",
+    "success": false,
+    "steps": 1257,
+    "cm": 29.38,
+    "deg": 179.7,
+    "start_cm": 29.4,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A"
+  ],
+  "total_limit": true,
+  "final": {
+   "A": {
+    "cm": 29.38,
+    "deg": 179.7,
+    "ok": false
+   },
+   "R": {
+    "cm": 22.46,
+    "deg": 82.4,
+    "ok": false
+   },
+   "M": {
+    "cm": 1.25,
+    "deg": 4.0,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 9000
+ },
+ {
+  "id": 141,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 151,
+    "cm": 1.14,
+    "deg": 2.5,
+    "start_cm": 13.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 120,
+    "cm": 1.79,
+    "deg": 4.5,
+    "start_cm": 18.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 122,
+    "cm": 1.07,
+    "deg": 0.2,
+    "start_cm": 7.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.2,
+    "deg": 0.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.78,
+    "deg": 4.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.07,
+    "deg": 0.2,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1270
+ },
+ {
+  "id": 142,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 93,
+    "cm": 1.71,
+    "deg": 4.7,
+    "start_cm": 2.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": false,
+    "steps": 52,
+    "cm": 17.21,
+    "deg": 63.2,
+    "start_cm": 17.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "R: A_outside",
+  "disturbed": [
+   "A"
+  ],
+  "failure_mode": "policy",
+  "contact_letter": "",
+  "final": {
+   "A": {
+    "cm": 11.74,
+    "deg": 23.6,
+    "ok": false
+   },
+   "R": {
+    "cm": 17.21,
+    "deg": 63.2,
+    "ok": false
+   },
+   "M": {
+    "cm": 4.82,
+    "deg": 67.3,
+    "ok": false
+   }
+  },
+  "word_success": false,
+  "steps": 730
+ },
+ {
+  "id": 143,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 217,
+    "cm": 1.42,
+    "deg": 8.4,
+    "start_cm": 18.7,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 137,
+    "cm": 1.29,
+    "deg": 4.3,
+    "start_cm": 11.8,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 90,
+    "cm": 0.9,
+    "deg": 2.3,
+    "start_cm": 3.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 84,
+    "cm": 0.85,
+    "deg": 1.3,
+    "start_cm": 2.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 0.85,
+    "deg": 1.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.73,
+    "deg": 0.2,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.97,
+    "deg": 0.8,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1699
+ },
+ {
+  "id": 144,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 62,
+    "cm": 1.68,
+    "deg": 0.5,
+    "start_cm": 0.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 87,
+    "cm": 0.73,
+    "deg": 1.5,
+    "start_cm": 10.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 66,
+    "cm": 0.72,
+    "deg": 0.9,
+    "start_cm": 10.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 1.67,
+    "deg": 2.3,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.73,
+    "deg": 1.5,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.72,
+    "deg": 0.9,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 950
+ },
+ {
+  "id": 145,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 162,
+    "cm": 1.61,
+    "deg": 1.6,
+    "start_cm": 29.6,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 219,
+    "cm": 1.19,
+    "deg": 1.7,
+    "start_cm": 18.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 114,
+    "cm": 1.97,
+    "deg": 8.4,
+    "start_cm": 14.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 21,
+    "cm": 1.29,
+    "deg": 1.2,
+    "start_cm": 2.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 64,
+    "cm": 1.86,
+    "deg": 3.3,
+    "start_cm": 5.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.29,
+    "deg": 1.2,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.86,
+    "deg": 3.3,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.97,
+    "deg": 8.4,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2043
+ },
+ {
+  "id": 146,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 58,
+    "cm": 0.26,
+    "deg": 3.3,
+    "start_cm": 3.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 79,
+    "cm": 0.69,
+    "deg": 1.9,
+    "start_cm": 6.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 76,
+    "cm": 1.35,
+    "deg": 2.0,
+    "start_cm": 8.1,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 70,
+    "cm": 1.56,
+    "deg": 9.2,
+    "start_cm": 4.0,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": true,
+    "steps": 53,
+    "cm": 1.18,
+    "deg": 1.8,
+    "start_cm": 1.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "A",
+    "success": true,
+    "steps": 51,
+    "cm": 1.34,
+    "deg": 3.7,
+    "start_cm": 2.2,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R",
+   "A"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.34,
+    "deg": 3.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.88,
+    "deg": 0.4,
+    "ok": true
+   },
+   "M": {
+    "cm": 1.22,
+    "deg": 4.3,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 2143
+ },
+ {
+  "id": 147,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 57,
+    "cm": 1.02,
+    "deg": 0.3,
+    "start_cm": 1.7,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 185,
+    "cm": 1.4,
+    "deg": 6.5,
+    "start_cm": 14.4,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 225,
+    "cm": 1.1,
+    "deg": 3.8,
+    "start_cm": 24.4,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [
+   {
+    "pass_": 1,
+    "letter": "A",
+    "success": true,
+    "steps": 167,
+    "cm": 1.23,
+    "deg": 1.9,
+    "start_cm": 7.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 1,
+    "letter": "R",
+    "success": false,
+    "steps": 1100,
+    "cm": 21.97,
+    "deg": 0.4,
+    "start_cm": 19.2,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 2,
+    "letter": "R",
+    "success": false,
+    "steps": 1100,
+    "cm": 23.94,
+    "deg": 0.1,
+    "start_cm": 22.0,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 3,
+    "letter": "R",
+    "success": false,
+    "steps": 1100,
+    "cm": 24.71,
+    "deg": 0.0,
+    "start_cm": 23.9,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   {
+    "pass_": 4,
+    "letter": "R",
+    "success": false,
+    "steps": 1600,
+    "cm": 24.71,
+    "deg": 0.0,
+    "start_cm": 24.7,
+    "route": [
+     "segment",
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   }
+  ],
+  "failure": "",
+  "disturbed": [
+   "A",
+   "R"
+  ],
+  "final": {
+   "A": {
+    "cm": 1.22,
+    "deg": 1.8,
+    "ok": true
+   },
+   "R": {
+    "cm": 24.71,
+    "deg": 0.0,
+    "ok": false
+   },
+   "M": {
+    "cm": 1.02,
+    "deg": 4.6,
+    "ok": true
+   }
+  },
+  "word_success": false,
+  "steps": 7875
+ },
+ {
+  "id": 148,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 122,
+    "cm": 0.85,
+    "deg": 4.3,
+    "start_cm": 5.5,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 77,
+    "cm": 1.22,
+    "deg": 1.7,
+    "start_cm": 12.1,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 103,
+    "cm": 0.51,
+    "deg": 1.6,
+    "start_cm": 9.9,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.77,
+    "deg": 6.4,
+    "ok": true
+   },
+   "R": {
+    "cm": 1.22,
+    "deg": 1.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.51,
+    "deg": 1.6,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1037
+ },
+ {
+  "id": 149,
+  "phases": {
+   "A": {
+    "success": true,
+    "steps": 227,
+    "cm": 0.66,
+    "deg": 1.5,
+    "start_cm": 14.8,
+    "route": [
+     "segment",
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "R": {
+    "success": true,
+    "steps": 80,
+    "cm": 0.66,
+    "deg": 0.2,
+    "start_cm": 4.4,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   },
+   "M": {
+    "success": true,
+    "steps": 64,
+    "cm": 0.98,
+    "deg": 2.5,
+    "start_cm": 7.3,
+    "route": [
+     "final"
+    ],
+    "mode": "policy"
+   }
+  },
+  "repairs": [],
+  "failure": "",
+  "disturbed": [],
+  "final": {
+   "A": {
+    "cm": 0.97,
+    "deg": 1.7,
+    "ok": true
+   },
+   "R": {
+    "cm": 0.29,
+    "deg": 0.8,
+    "ok": true
+   },
+   "M": {
+    "cm": 0.98,
+    "deg": 2.5,
+    "ok": true
+   }
+  },
+  "word_success": true,
+  "steps": 1248
+ }
+]
